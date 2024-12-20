@@ -9,28 +9,61 @@ import SwiftUI
 
 struct ContentView: View {
     private let createJobsByRegionView: CreateJobsByRegionView
-    
+
+    /// View Properties
+    private let lineWidthStroke: CGFloat = 3
+    private let cornerRadiusRoundedRectangle: CGFloat = 20
+    private let paddingLabelsJobs: CGFloat = 10
+
     init(createJobsByRegionView: CreateJobsByRegionView) {
         self.createJobsByRegionView = createJobsByRegionView
     }
     
     var body: some View {
         NavigationStack {
-            VStack {
-                
+            VStack(spacing: 30) {
+
                 NavigationLink(destination:
                                 createJobsByRegionView.create()) {
-                    Text("Jobs by Region")
+                    HStack {
+                        Image(systemName: "network")
+                        Text("Jobs by Region")
+                    }
+                    .padding(paddingLabelsJobs)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
+                            .stroke(lineWidth: lineWidthStroke)
+
+                    }
                 }
-                .accessibilityIdentifier("navItemDialplan")
-                
-                Button("Jobs by language") {
-                    
+                .accessibilityIdentifier("navItemRegion")
+
+                NavigationLink(destination:
+                                createJobsByRegionView.create()) {
+                    Text("🀍 Jobs by Language")
+                        .padding(paddingLabelsJobs)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
+                                .stroke(lineWidth: lineWidthStroke)
+
+                        }
                 }
-                
-                Button("Jobs by type") {
-                    
+                .accessibilityIdentifier("navItemLanguage")
+
+                NavigationLink(destination:
+                                createJobsByRegionView.create()) {
+                    HStack {
+                        Image(systemName: "list.bullet.rectangle")
+                        Text("Jobs by Type")
+                    }
+                    .padding(paddingLabelsJobs)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
+                            .stroke(lineWidth: lineWidthStroke)
+
+                    }
                 }
+                .accessibilityIdentifier("navItemType")
             }
         }
     }
