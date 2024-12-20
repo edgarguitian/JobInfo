@@ -7,6 +7,7 @@
 
 import Testing
 @testable import JobInfo
+
 struct APIGetRegionsDataSourceTests {
 
     @Test func tests_getRegions_return_success_when_httpclient_request_success_and_response_is_correct() async throws {

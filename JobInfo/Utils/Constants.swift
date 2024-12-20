@@ -12,6 +12,7 @@ let firebaseLogs = FirebaseLogs()
 /// URLS JOBS
 let urlBase = "https://jobdataapi.com/api/"
 let getRegionsPath = "jobregions/"
+let getJobsByRegionsPath = "jobs/"
 
 /// View Properties
 let lineWidthStroke: CGFloat = 3
