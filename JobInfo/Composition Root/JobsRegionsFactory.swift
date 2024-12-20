@@ -10,7 +10,8 @@ import Foundation
 final class JobsRegionsFactory: @preconcurrency CreateJobsByRegionView {
     // MARK: UI
     @MainActor func create() -> JobsRegionsView {
-        return JobsRegionsView(viewModel: createJobsRegionsViewModel())
+        return JobsRegionsView(viewModel: createJobsRegionsViewModel(),
+                               createJobsView: JobsFactory())
     }
     
     // MARK: View Model

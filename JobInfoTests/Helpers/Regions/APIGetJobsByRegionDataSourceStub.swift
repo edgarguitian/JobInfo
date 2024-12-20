@@ -9,7 +9,7 @@ import Foundation
 @testable import JobInfo
 
 final class APIGetJobsByRegionDataSourceStub: APIGetJobsByRegionDataSourceType {
-    var isSuccess = false
+    var isSuccess = true
     var jobs: JobResultDTO?
 
     func getJobsByRegion(regionId: Int, currentPage: Int) async throws(HTTPClientError) -> JobResultDTO {

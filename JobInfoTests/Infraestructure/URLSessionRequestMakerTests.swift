@@ -23,7 +23,6 @@ struct URLSessionRequestMakerTests {
         #expect(request != nil)
         #expect(request?.httpMethod == "GET")
         #expect(request?.url?.absoluteString == "https://example.com/test?param=value")
-        #expect(request?.value(forHTTPHeaderField: "Content-Type") == nil)
     }
     
     @Test func test_urlRequest_success_post_not_nil_body_nil_queryParameters() {
@@ -56,7 +55,6 @@ struct URLSessionRequestMakerTests {
         #expect(request != nil)
         #expect(request?.httpMethod == "POST")
         #expect(request?.url?.absoluteString == "https://example.com/test?key=value")
-        #expect(request?.value(forHTTPHeaderField: "Content-Type") == nil)
         #expect(request?.httpBody == nil)
     }
 

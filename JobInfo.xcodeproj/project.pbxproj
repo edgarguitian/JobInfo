@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D235C822D15A47C0055C8E7 /* CreateJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C812D15A47C0055C8E7 /* CreateJobsView.swift */; };
+		6D235C842D15A4950055C8E7 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C832D15A4950055C8E7 /* JobsView.swift */; };
+		6D235C862D15A5740055C8E7 /* JobsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C852D15A5740055C8E7 /* JobsFactory.swift */; };
+		6D235C882D15A6120055C8E7 /* JobsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C872D15A6120055C8E7 /* JobsViewModel.swift */; };
 		6D983DB02D14781B008DC00A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D983DA72D14781B008DC00A /* Preview Assets.xcassets */; };
 		6D983DB12D14781B008DC00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D983DAB2D14781B008DC00A /* Assets.xcassets */; };
 		6D983DB22D14781B008DC00A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DAC2D14781B008DC00A /* ContentView.swift */; };
@@ -94,6 +98,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D235C812D15A47C0055C8E7 /* CreateJobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJobsView.swift; sourceTree = "<group>"; };
+		6D235C832D15A4950055C8E7 /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		6D235C852D15A5740055C8E7 /* JobsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsFactory.swift; sourceTree = "<group>"; };
+		6D235C872D15A6120055C8E7 /* JobsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsViewModel.swift; sourceTree = "<group>"; };
 		6D40ADDD2D1476C90015F8AC /* JobInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D40ADEE2D1476CA0015F8AC /* JobInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D40ADF82D1476CA0015F8AC /* JobInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,6 +233,7 @@
 			children = (
 				6DED88952D148A80009526BC /* ContentViewFactory.swift */,
 				6DED88972D148AEC009526BC /* JobsRegionsFactory.swift */,
+				6D235C852D15A5740055C8E7 /* JobsFactory.swift */,
 			);
 			path = "Composition Root";
 			sourceTree = "<group>";
@@ -355,6 +364,7 @@
 			isa = PBXGroup;
 			children = (
 				6DED889C2D148D03009526BC /* JobInfoPresentableErrorMapper.swift */,
+				6D235C872D15A6120055C8E7 /* JobsViewModel.swift */,
 				6DED889B2D148CF2009526BC /* JobsRegions */,
 			);
 			path = Presentation;
@@ -372,6 +382,8 @@
 			isa = PBXGroup;
 			children = (
 				6DED889E2D148FCA009526BC /* LoadingSpinnerView.swift */,
+				6D235C812D15A47C0055C8E7 /* CreateJobsView.swift */,
+				6D235C832D15A4950055C8E7 /* JobsView.swift */,
 				6DED88902D1488FD009526BC /* JobsByRegion */,
 			);
 			path = UI;
@@ -711,6 +723,7 @@
 				AFB03E652D15909F00C5632C /* APIGetJobsByRegionDataSource.swift in Sources */,
 				6DED88762D147E42009526BC /* GetRegionsRepository.swift in Sources */,
 				6DED88732D147CD5009526BC /* APIGetRegionsDataSource.swift in Sources */,
+				6D235C882D15A6120055C8E7 /* JobsViewModel.swift in Sources */,
 				6DED88802D147FF0009526BC /* GetRegions.swift in Sources */,
 				6DED889A2D148BB1009526BC /* JobsRegionsViewModel.swift in Sources */,
 				6DED88942D1489B3009526BC /* CreateJobsByRegionView.swift in Sources */,
@@ -731,11 +744,14 @@
 				6DED887E2D147F3C009526BC /* RegionsResultMapper.swift in Sources */,
 				6DED889D2D148D03009526BC /* JobInfoPresentableErrorMapper.swift in Sources */,
 				6D983DD42D147BB0008DC00A /* APIGetRegionsDataSourceType.swift in Sources */,
+				6D235C842D15A4950055C8E7 /* JobsView.swift in Sources */,
 				AFB03E4F2D1587B700C5632C /* GetJobsByRegionType.swift in Sources */,
 				6D983DC92D147A7A008DC00A /* HTTPClientError.swift in Sources */,
 				6DED887C2D147EFD009526BC /* JobRegion.swift in Sources */,
 				6D983DD12D147B55008DC00A /* JobRegionDTO.swift in Sources */,
 				6D983DCD2D147A98008DC00A /* HTTPMethod.swift in Sources */,
+				6D235C822D15A47C0055C8E7 /* CreateJobsView.swift in Sources */,
+				6D235C862D15A5740055C8E7 /* JobsFactory.swift in Sources */,
 				6DED88822D1482F4009526BC /* JobInfoDomainErrorMapper.swift in Sources */,
 				AFB03E472D1583E200C5632C /* JobDTO.swift in Sources */,
 				6D983DB82D1478B3008DC00A /* URLSessionErrorResolver.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 @testable import JobInfo
 
 final class APIGetRegionsDataSourceStub: APIGetRegionsDataSourceType {
-    var isSuccess = false
+    var isSuccess = true
     var regions: [JobRegionDTO] = []
     
     func getRegions() async throws(HTTPClientError) -> [JobRegionDTO] {

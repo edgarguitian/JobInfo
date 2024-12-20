@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoadingSpinnerView: View {
-    @State private var animate = false
+    private var animate = true
     @Environment(\.colorScheme) var colorScheme
     private var colorDefault: Color {
         colorScheme == .dark ? .white : .black
@@ -36,11 +36,6 @@ struct LoadingSpinnerView: View {
                 .repeatForever(autoreverses: false),
                 value: animate
             )
-            .onAppear {
-                withAnimation {
-                    animate.toggle()
-                }
-            }
     }
 }
 

@@ -25,6 +25,10 @@ struct Job {
     let salaryCurrency: String?
 }
 
+extension Job: Hashable {
+    
+}
+
 
 // MARK: - City
 struct City {
@@ -33,15 +37,27 @@ struct City {
     let state: State
 }
 
+extension City: Hashable {
+    
+}
+
 // MARK: - Country
 struct Country {
     let name: String
     let region: Region
 }
 
+extension Country: Hashable {
+    
+}
+
 // MARK: - Region
 struct Region {
     let name: Name
+}
+
+extension Region: Hashable {
+    
 }
 
 enum Name: String {
@@ -55,10 +71,18 @@ enum Name: String {
     case temporary = "Temporary"
 }
 
+extension Name: Hashable {
+    
+}
+
 // MARK: - State
 struct State {
     let name: String
     let country: Country
+}
+
+extension State: Hashable {
+    
 }
 
 // MARK: - Company
@@ -69,4 +93,8 @@ struct Company {
     let twitterHandle: String?
     let githubURL: String?
     let isAgency: Bool
+}
+
+extension Company: Hashable {
+    
 }
