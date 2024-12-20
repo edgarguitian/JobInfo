@@ -8,17 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let createJobsByRegionView: CreateJobsByRegionView
+    
+    init(createJobsByRegionView: CreateJobsByRegionView) {
+        self.createJobsByRegionView = createJobsByRegionView
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                
+                NavigationLink(destination:
+                                createJobsByRegionView.create()) {
+                    Text("Jobs by Region")
+                }
+                .accessibilityIdentifier("navItemDialplan")
+                
+                Button("Jobs by language") {
+                    
+                }
+                
+                Button("Jobs by type") {
+                    
+                }
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView()
+    ContentViewFactory.create()
 }

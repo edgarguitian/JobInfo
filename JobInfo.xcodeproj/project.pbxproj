@@ -6,6 +6,58 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6D983DB02D14781B008DC00A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D983DA72D14781B008DC00A /* Preview Assets.xcassets */; };
+		6D983DB12D14781B008DC00A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D983DAB2D14781B008DC00A /* Assets.xcassets */; };
+		6D983DB22D14781B008DC00A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DAC2D14781B008DC00A /* ContentView.swift */; };
+		6D983DB32D14781B008DC00A /* JobInfoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DAE2D14781B008DC00A /* JobInfoApp.swift */; };
+		6D983DB62D14789F008DC00A /* URLSessionRequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DB52D14789F008DC00A /* URLSessionRequestMaker.swift */; };
+		6D983DB82D1478B3008DC00A /* URLSessionErrorResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DB72D1478B3008DC00A /* URLSessionErrorResolver.swift */; };
+		6D983DBA2D1478C4008DC00A /* URLSessionHTTPCLient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DB92D1478C4008DC00A /* URLSessionHTTPCLient.swift */; };
+		6D983DBC2D1478E1008DC00A /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DBB2D1478E1008DC00A /* URLSessionType.swift */; };
+		6D983DBE2D1478ED008DC00A /* SharedURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DBD2D1478ED008DC00A /* SharedURLSession.swift */; };
+		6D983DC22D147957008DC00A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DC12D147957008DC00A /* Constants.swift */; };
+		6D983DC42D1479B4008DC00A /* FirebaseLogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DC32D1479B4008DC00A /* FirebaseLogs.swift */; };
+		6D983DC72D1479FD008DC00A /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D983DC62D1479FD008DC00A /* FirebaseCrashlytics */; };
+		6D983DC92D147A7A008DC00A /* HTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DC82D147A7A008DC00A /* HTTPClientError.swift */; };
+		6D983DCB2D147A8B008DC00A /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DCA2D147A8B008DC00A /* Endpoint.swift */; };
+		6D983DCD2D147A98008DC00A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DCC2D147A98008DC00A /* HTTPMethod.swift */; };
+		6D983DCF2D147AA3008DC00A /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DCE2D147AA3008DC00A /* HTTPClient.swift */; };
+		6D983DD12D147B55008DC00A /* JobRegionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DD02D147B55008DC00A /* JobRegionDTO.swift */; };
+		6D983DD42D147BB0008DC00A /* APIGetRegionsDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DD32D147BB0008DC00A /* APIGetRegionsDataSourceType.swift */; };
+		6DED88732D147CD5009526BC /* APIGetRegionsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88722D147CD5009526BC /* APIGetRegionsDataSource.swift */; };
+		6DED88762D147E42009526BC /* GetRegionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88752D147E42009526BC /* GetRegionsRepository.swift */; };
+		6DED88782D147E5F009526BC /* GetRegionsRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88772D147E5F009526BC /* GetRegionsRepositoryType.swift */; };
+		6DED887A2D147EEA009526BC /* JobInfoDomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88792D147EEA009526BC /* JobInfoDomainError.swift */; };
+		6DED887C2D147EFD009526BC /* JobRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED887B2D147EFD009526BC /* JobRegion.swift */; };
+		6DED887E2D147F3C009526BC /* RegionsResultMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED887D2D147F3C009526BC /* RegionsResultMapper.swift */; };
+		6DED88802D147FF0009526BC /* GetRegions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED887F2D147FF0009526BC /* GetRegions.swift */; };
+		6DED88822D1482F4009526BC /* JobInfoDomainErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88812D1482F4009526BC /* JobInfoDomainErrorMapper.swift */; };
+		6DED88842D14835E009526BC /* GetRegionsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88832D14835E009526BC /* GetRegionsType.swift */; };
+		6DED88922D14891A009526BC /* JobsRegionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88912D14891A009526BC /* JobsRegionsView.swift */; };
+		6DED88942D1489B3009526BC /* CreateJobsByRegionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88932D1489B3009526BC /* CreateJobsByRegionView.swift */; };
+		6DED88962D148A80009526BC /* ContentViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88952D148A80009526BC /* ContentViewFactory.swift */; };
+		6DED88982D148AEC009526BC /* JobsRegionsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88972D148AEC009526BC /* JobsRegionsFactory.swift */; };
+		6DED889A2D148BB1009526BC /* JobsRegionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88992D148BB1009526BC /* JobsRegionsViewModel.swift */; };
+		6DED889D2D148D03009526BC /* JobInfoPresentableErrorMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED889C2D148D03009526BC /* JobInfoPresentableErrorMapper.swift */; };
+		6DED889F2D148FCA009526BC /* LoadingSpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED889E2D148FCA009526BC /* LoadingSpinnerView.swift */; };
+		6DED88C42D149552009526BC /* SharedURLSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88B12D149552009526BC /* SharedURLSessionTests.swift */; };
+		6DED88C52D149552009526BC /* URLSessionErrorResolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88B22D149552009526BC /* URLSessionErrorResolverTests.swift */; };
+		6DED88C62D149552009526BC /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88B32D149552009526BC /* URLSessionHTTPClientTests.swift */; };
+		6DED88C72D149552009526BC /* URLSessionRequestMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88B42D149552009526BC /* URLSessionRequestMakerTests.swift */; };
+		6DED88C82D149552009526BC /* APIGetRegionsDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88B62D149552009526BC /* APIGetRegionsDataSourceTests.swift */; };
+		6DED88C92D149552009526BC /* GetRegionsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88B82D149552009526BC /* GetRegionsRepositoryTests.swift */; };
+		6DED88CA2D149552009526BC /* GetRegionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88BB2D149552009526BC /* GetRegionsTests.swift */; };
+		6DED88CB2D149552009526BC /* GetRegionsRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88BD2D149552009526BC /* GetRegionsRepositoryStub.swift */; };
+		6DED88CC2D149552009526BC /* Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88BF2D149552009526BC /* Equatable.swift */; };
+		6DED88CF2D149576009526BC /* JobsRegionsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88CE2D149576009526BC /* JobsRegionsViewModelTests.swift */; };
+		6DED88D22D14959E009526BC /* JobInfoPresentableErrorMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88D12D14959E009526BC /* JobInfoPresentableErrorMapperTests.swift */; };
+		6DED88D42D149864009526BC /* URLSessionStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88D32D149864009526BC /* URLSessionStub.swift */; };
+		6DED88D62D149B1E009526BC /* APIGetRegionsDataSourceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88D52D149B1E009526BC /* APIGetRegionsDataSourceStub.swift */; };
+		6DED88D82D149DEF009526BC /* HTTPClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88D72D149DEF009526BC /* HTTPClientStub.swift */; };
+		6DED88DC2D14A17E009526BC /* GetRegionsStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED88DB2D14A17E009526BC /* GetRegionsStub.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6D40ADEF2D1476CA0015F8AC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,19 +79,58 @@
 		6D40ADDD2D1476C90015F8AC /* JobInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D40ADEE2D1476CA0015F8AC /* JobInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D40ADF82D1476CA0015F8AC /* JobInfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobInfoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D983DA72D14781B008DC00A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D983DAB2D14781B008DC00A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D983DAC2D14781B008DC00A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6D983DAD2D14781B008DC00A /* JobInfo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JobInfo.entitlements; sourceTree = "<group>"; };
+		6D983DAE2D14781B008DC00A /* JobInfoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobInfoApp.swift; sourceTree = "<group>"; };
+		6D983DB52D14789F008DC00A /* URLSessionRequestMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestMaker.swift; sourceTree = "<group>"; };
+		6D983DB72D1478B3008DC00A /* URLSessionErrorResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionErrorResolver.swift; sourceTree = "<group>"; };
+		6D983DB92D1478C4008DC00A /* URLSessionHTTPCLient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPCLient.swift; sourceTree = "<group>"; };
+		6D983DBB2D1478E1008DC00A /* URLSessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionType.swift; sourceTree = "<group>"; };
+		6D983DBD2D1478ED008DC00A /* SharedURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedURLSession.swift; sourceTree = "<group>"; };
+		6D983DC12D147957008DC00A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6D983DC32D1479B4008DC00A /* FirebaseLogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogs.swift; sourceTree = "<group>"; };
+		6D983DC82D147A7A008DC00A /* HTTPClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientError.swift; sourceTree = "<group>"; };
+		6D983DCA2D147A8B008DC00A /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		6D983DCC2D147A98008DC00A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		6D983DCE2D147AA3008DC00A /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		6D983DD02D147B55008DC00A /* JobRegionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRegionDTO.swift; sourceTree = "<group>"; };
+		6D983DD32D147BB0008DC00A /* APIGetRegionsDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetRegionsDataSourceType.swift; sourceTree = "<group>"; };
+		6DED88722D147CD5009526BC /* APIGetRegionsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetRegionsDataSource.swift; sourceTree = "<group>"; };
+		6DED88752D147E42009526BC /* GetRegionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegionsRepository.swift; sourceTree = "<group>"; };
+		6DED88772D147E5F009526BC /* GetRegionsRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegionsRepositoryType.swift; sourceTree = "<group>"; };
+		6DED88792D147EEA009526BC /* JobInfoDomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobInfoDomainError.swift; sourceTree = "<group>"; };
+		6DED887B2D147EFD009526BC /* JobRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobRegion.swift; sourceTree = "<group>"; };
+		6DED887D2D147F3C009526BC /* RegionsResultMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsResultMapper.swift; sourceTree = "<group>"; };
+		6DED887F2D147FF0009526BC /* GetRegions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegions.swift; sourceTree = "<group>"; };
+		6DED88812D1482F4009526BC /* JobInfoDomainErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobInfoDomainErrorMapper.swift; sourceTree = "<group>"; };
+		6DED88832D14835E009526BC /* GetRegionsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegionsType.swift; sourceTree = "<group>"; };
+		6DED88912D14891A009526BC /* JobsRegionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRegionsView.swift; sourceTree = "<group>"; };
+		6DED88932D1489B3009526BC /* CreateJobsByRegionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateJobsByRegionView.swift; sourceTree = "<group>"; };
+		6DED88952D148A80009526BC /* ContentViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewFactory.swift; sourceTree = "<group>"; };
+		6DED88972D148AEC009526BC /* JobsRegionsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRegionsFactory.swift; sourceTree = "<group>"; };
+		6DED88992D148BB1009526BC /* JobsRegionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRegionsViewModel.swift; sourceTree = "<group>"; };
+		6DED889C2D148D03009526BC /* JobInfoPresentableErrorMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobInfoPresentableErrorMapper.swift; sourceTree = "<group>"; };
+		6DED889E2D148FCA009526BC /* LoadingSpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerView.swift; sourceTree = "<group>"; };
+		6DED88B12D149552009526BC /* SharedURLSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedURLSessionTests.swift; sourceTree = "<group>"; };
+		6DED88B22D149552009526BC /* URLSessionErrorResolverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionErrorResolverTests.swift; sourceTree = "<group>"; };
+		6DED88B32D149552009526BC /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		6DED88B42D149552009526BC /* URLSessionRequestMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestMakerTests.swift; sourceTree = "<group>"; };
+		6DED88B62D149552009526BC /* APIGetRegionsDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetRegionsDataSourceTests.swift; sourceTree = "<group>"; };
+		6DED88B82D149552009526BC /* GetRegionsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegionsRepositoryTests.swift; sourceTree = "<group>"; };
+		6DED88BB2D149552009526BC /* GetRegionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegionsTests.swift; sourceTree = "<group>"; };
+		6DED88BD2D149552009526BC /* GetRegionsRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegionsRepositoryStub.swift; sourceTree = "<group>"; };
+		6DED88BF2D149552009526BC /* Equatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equatable.swift; sourceTree = "<group>"; };
+		6DED88CE2D149576009526BC /* JobsRegionsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsRegionsViewModelTests.swift; sourceTree = "<group>"; };
+		6DED88D12D14959E009526BC /* JobInfoPresentableErrorMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobInfoPresentableErrorMapperTests.swift; sourceTree = "<group>"; };
+		6DED88D32D149864009526BC /* URLSessionStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionStub.swift; sourceTree = "<group>"; };
+		6DED88D52D149B1E009526BC /* APIGetRegionsDataSourceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetRegionsDataSourceStub.swift; sourceTree = "<group>"; };
+		6DED88D72D149DEF009526BC /* HTTPClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientStub.swift; sourceTree = "<group>"; };
+		6DED88DB2D14A17E009526BC /* GetRegionsStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRegionsStub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6D40ADDF2D1476C90015F8AC /* JobInfo */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JobInfo;
-			sourceTree = "<group>";
-		};
-		6D40ADF12D1476CA0015F8AC /* JobInfoTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = JobInfoTests;
-			sourceTree = "<group>";
-		};
 		6D40ADFB2D1476CA0015F8AC /* JobInfoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = JobInfoUITests;
@@ -52,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D983DC72D1479FD008DC00A /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,8 +167,8 @@
 		6D40ADD42D1476C90015F8AC = {
 			isa = PBXGroup;
 			children = (
-				6D40ADDF2D1476C90015F8AC /* JobInfo */,
-				6D40ADF12D1476CA0015F8AC /* JobInfoTests */,
+				6D983DAF2D14781B008DC00A /* JobInfo */,
+				6DED88C32D149552009526BC /* JobInfoTests */,
 				6D40ADFB2D1476CA0015F8AC /* JobInfoUITests */,
 				6D40ADDE2D1476C90015F8AC /* Products */,
 			);
@@ -90,6 +182,325 @@
 				6D40ADF82D1476CA0015F8AC /* JobInfoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6D983D982D14781B008DC00A /* Composition Root */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88952D148A80009526BC /* ContentViewFactory.swift */,
+				6DED88972D148AEC009526BC /* JobsRegionsFactory.swift */,
+			);
+			path = "Composition Root";
+			sourceTree = "<group>";
+		};
+		6D983D992D14781B008DC00A /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DD02D147B55008DC00A /* JobRegionDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		6D983D9A2D14781B008DC00A /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				6DED887D2D147F3C009526BC /* RegionsResultMapper.swift */,
+				6DED88812D1482F4009526BC /* JobInfoDomainErrorMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		6D983D9B2D14781B008DC00A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DC82D147A7A008DC00A /* HTTPClientError.swift */,
+				6D983DCA2D147A8B008DC00A /* Endpoint.swift */,
+				6D983DCC2D147A98008DC00A /* HTTPMethod.swift */,
+				6D983DCE2D147AA3008DC00A /* HTTPClient.swift */,
+				6D983DD22D147B9A008DC00A /* Regions */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6D983D9C2D14781B008DC00A /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88742D147E32009526BC /* Regions */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6D983D9D2D14781B008DC00A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6D983D9A2D14781B008DC00A /* Mapper */,
+				6D983D992D14781B008DC00A /* DTOs */,
+				6D983D9B2D14781B008DC00A /* Networking */,
+				6D983D9C2D14781B008DC00A /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6D983D9E2D14781B008DC00A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				6DED887B2D147EFD009526BC /* JobRegion.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		6D983D9F2D14781B008DC00A /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88792D147EEA009526BC /* JobInfoDomainError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		6D983DA02D14781B008DC00A /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88772D147E5F009526BC /* GetRegionsRepositoryType.swift */,
+				6DED88832D14835E009526BC /* GetRegionsType.swift */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		6D983DA12D14781B008DC00A /* Use Cases */ = {
+			isa = PBXGroup;
+			children = (
+				6DED887F2D147FF0009526BC /* GetRegions.swift */,
+			);
+			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		6D983DA22D14781B008DC00A /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6D983D9F2D14781B008DC00A /* Error */,
+				6D983DA02D14781B008DC00A /* Interfaces */,
+				6D983DA12D14781B008DC00A /* Use Cases */,
+				6D983D9E2D14781B008DC00A /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6D983DA32D14781B008DC00A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D983DA42D14781B008DC00A /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DB42D147890008DC00A /* Networking */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		6D983DA52D14781B008DC00A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6D983DA62D14781B008DC00A /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6DED889C2D148D03009526BC /* JobInfoPresentableErrorMapper.swift */,
+				6DED889B2D148CF2009526BC /* JobsRegions */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6D983DA82D14781B008DC00A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DA72D14781B008DC00A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6D983DA92D14781B008DC00A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				6DED889E2D148FCA009526BC /* LoadingSpinnerView.swift */,
+				6DED88902D1488FD009526BC /* JobsByRegion */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6D983DAA2D14781B008DC00A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DC12D147957008DC00A /* Constants.swift */,
+				6D983DC32D1479B4008DC00A /* FirebaseLogs.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6D983DAF2D14781B008DC00A /* JobInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DA32D14781B008DC00A /* Extensions */,
+				6D983DA52D14781B008DC00A /* Managers */,
+				6D983DAA2D14781B008DC00A /* Utils */,
+				6D983D982D14781B008DC00A /* Composition Root */,
+				6D983DA92D14781B008DC00A /* UI */,
+				6D983DA62D14781B008DC00A /* Presentation */,
+				6D983DA42D14781B008DC00A /* Infraestructure */,
+				6D983D9D2D14781B008DC00A /* Data */,
+				6D983DA22D14781B008DC00A /* Domain */,
+				6D983DA82D14781B008DC00A /* Preview Content */,
+				6D983DAB2D14781B008DC00A /* Assets.xcassets */,
+				6D983DAC2D14781B008DC00A /* ContentView.swift */,
+				6D983DAD2D14781B008DC00A /* JobInfo.entitlements */,
+				6D983DAE2D14781B008DC00A /* JobInfoApp.swift */,
+			);
+			path = JobInfo;
+			sourceTree = "<group>";
+		};
+		6D983DB42D147890008DC00A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DB52D14789F008DC00A /* URLSessionRequestMaker.swift */,
+				6D983DB72D1478B3008DC00A /* URLSessionErrorResolver.swift */,
+				6D983DB92D1478C4008DC00A /* URLSessionHTTPCLient.swift */,
+				6D983DBB2D1478E1008DC00A /* URLSessionType.swift */,
+				6D983DBD2D1478ED008DC00A /* SharedURLSession.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6D983DD22D147B9A008DC00A /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				6D983DD32D147BB0008DC00A /* APIGetRegionsDataSourceType.swift */,
+				6DED88722D147CD5009526BC /* APIGetRegionsDataSource.swift */,
+			);
+			path = Regions;
+			sourceTree = "<group>";
+		};
+		6DED88742D147E32009526BC /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88752D147E42009526BC /* GetRegionsRepository.swift */,
+			);
+			path = Regions;
+			sourceTree = "<group>";
+		};
+		6DED88902D1488FD009526BC /* JobsByRegion */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88912D14891A009526BC /* JobsRegionsView.swift */,
+				6DED88932D1489B3009526BC /* CreateJobsByRegionView.swift */,
+			);
+			path = JobsByRegion;
+			sourceTree = "<group>";
+		};
+		6DED889B2D148CF2009526BC /* JobsRegions */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88992D148BB1009526BC /* JobsRegionsViewModel.swift */,
+			);
+			path = JobsRegions;
+			sourceTree = "<group>";
+		};
+		6DED88B52D149552009526BC /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88B22D149552009526BC /* URLSessionErrorResolverTests.swift */,
+				6DED88B32D149552009526BC /* URLSessionHTTPClientTests.swift */,
+				6DED88B42D149552009526BC /* URLSessionRequestMakerTests.swift */,
+				6DED88B12D149552009526BC /* SharedURLSessionTests.swift */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		6DED88B72D149552009526BC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88B62D149552009526BC /* APIGetRegionsDataSourceTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6DED88B92D149552009526BC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88B82D149552009526BC /* GetRegionsRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		6DED88BA2D149552009526BC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88B72D149552009526BC /* Networking */,
+				6DED88B92D149552009526BC /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6DED88BC2D149552009526BC /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88BB2D149552009526BC /* GetRegionsTests.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6DED88BE2D149552009526BC /* Regions */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88BD2D149552009526BC /* GetRegionsRepositoryStub.swift */,
+				6DED88D52D149B1E009526BC /* APIGetRegionsDataSourceStub.swift */,
+				6DED88DB2D14A17E009526BC /* GetRegionsStub.swift */,
+			);
+			path = Regions;
+			sourceTree = "<group>";
+		};
+		6DED88C02D149552009526BC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88BF2D149552009526BC /* Equatable.swift */,
+				6DED88D32D149864009526BC /* URLSessionStub.swift */,
+				6DED88D72D149DEF009526BC /* HTTPClientStub.swift */,
+				6DED88BE2D149552009526BC /* Regions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6DED88C12D149552009526BC /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88CE2D149576009526BC /* JobsRegionsViewModelTests.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6DED88C32D149552009526BC /* JobInfoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88C02D149552009526BC /* Helpers */,
+				6DED88D02D14958D009526BC /* Mappers */,
+				6DED88C12D149552009526BC /* Presentation */,
+				6DED88B52D149552009526BC /* Infraestructure */,
+				6DED88BA2D149552009526BC /* Data */,
+				6DED88BC2D149552009526BC /* Domain */,
+			);
+			path = JobInfoTests;
+			sourceTree = "<group>";
+		};
+		6DED88D02D14958D009526BC /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				6DED88D12D14959E009526BC /* JobInfoPresentableErrorMapperTests.swift */,
+			);
+			path = Mappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,11 +518,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				6D40ADDF2D1476C90015F8AC /* JobInfo */,
-			);
 			name = JobInfo;
 			packageProductDependencies = (
+				6D983DC62D1479FD008DC00A /* FirebaseCrashlytics */,
 			);
 			productName = JobInfo;
 			productReference = 6D40ADDD2D1476C90015F8AC /* JobInfo.app */;
@@ -129,9 +538,6 @@
 			);
 			dependencies = (
 				6D40ADF02D1476CA0015F8AC /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6D40ADF12D1476CA0015F8AC /* JobInfoTests */,
 			);
 			name = JobInfoTests;
 			packageProductDependencies = (
@@ -195,6 +601,9 @@
 			);
 			mainGroup = 6D40ADD42D1476C90015F8AC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				6D983DC52D1479FD008DC00A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6D40ADDE2D1476C90015F8AC /* Products */;
 			projectDirPath = "";
@@ -212,6 +621,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D983DB02D14781B008DC00A /* Preview Assets.xcassets in Resources */,
+				6D983DB12D14781B008DC00A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +647,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D983DBE2D1478ED008DC00A /* SharedURLSession.swift in Sources */,
+				6D983DBC2D1478E1008DC00A /* URLSessionType.swift in Sources */,
+				6D983DCF2D147AA3008DC00A /* HTTPClient.swift in Sources */,
+				6D983DC42D1479B4008DC00A /* FirebaseLogs.swift in Sources */,
+				6DED88762D147E42009526BC /* GetRegionsRepository.swift in Sources */,
+				6DED88732D147CD5009526BC /* APIGetRegionsDataSource.swift in Sources */,
+				6DED88802D147FF0009526BC /* GetRegions.swift in Sources */,
+				6DED889A2D148BB1009526BC /* JobsRegionsViewModel.swift in Sources */,
+				6DED88942D1489B3009526BC /* CreateJobsByRegionView.swift in Sources */,
+				6D983DBA2D1478C4008DC00A /* URLSessionHTTPCLient.swift in Sources */,
+				6DED88842D14835E009526BC /* GetRegionsType.swift in Sources */,
+				6D983DB22D14781B008DC00A /* ContentView.swift in Sources */,
+				6D983DB62D14789F008DC00A /* URLSessionRequestMaker.swift in Sources */,
+				6D983DB32D14781B008DC00A /* JobInfoApp.swift in Sources */,
+				6DED88962D148A80009526BC /* ContentViewFactory.swift in Sources */,
+				6DED88922D14891A009526BC /* JobsRegionsView.swift in Sources */,
+				6DED88782D147E5F009526BC /* GetRegionsRepositoryType.swift in Sources */,
+				6DED88982D148AEC009526BC /* JobsRegionsFactory.swift in Sources */,
+				6DED887E2D147F3C009526BC /* RegionsResultMapper.swift in Sources */,
+				6DED889D2D148D03009526BC /* JobInfoPresentableErrorMapper.swift in Sources */,
+				6D983DD42D147BB0008DC00A /* APIGetRegionsDataSourceType.swift in Sources */,
+				6D983DC92D147A7A008DC00A /* HTTPClientError.swift in Sources */,
+				6DED887C2D147EFD009526BC /* JobRegion.swift in Sources */,
+				6D983DD12D147B55008DC00A /* JobRegionDTO.swift in Sources */,
+				6D983DCD2D147A98008DC00A /* HTTPMethod.swift in Sources */,
+				6DED88822D1482F4009526BC /* JobInfoDomainErrorMapper.swift in Sources */,
+				6D983DB82D1478B3008DC00A /* URLSessionErrorResolver.swift in Sources */,
+				6D983DCB2D147A8B008DC00A /* Endpoint.swift in Sources */,
+				6DED887A2D147EEA009526BC /* JobInfoDomainError.swift in Sources */,
+				6DED889F2D148FCA009526BC /* LoadingSpinnerView.swift in Sources */,
+				6D983DC22D147957008DC00A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +685,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DED88C42D149552009526BC /* SharedURLSessionTests.swift in Sources */,
+				6DED88DC2D14A17E009526BC /* GetRegionsStub.swift in Sources */,
+				6DED88C52D149552009526BC /* URLSessionErrorResolverTests.swift in Sources */,
+				6DED88C62D149552009526BC /* URLSessionHTTPClientTests.swift in Sources */,
+				6DED88C72D149552009526BC /* URLSessionRequestMakerTests.swift in Sources */,
+				6DED88C82D149552009526BC /* APIGetRegionsDataSourceTests.swift in Sources */,
+				6DED88D22D14959E009526BC /* JobInfoPresentableErrorMapperTests.swift in Sources */,
+				6DED88D82D149DEF009526BC /* HTTPClientStub.swift in Sources */,
+				6DED88C92D149552009526BC /* GetRegionsRepositoryTests.swift in Sources */,
+				6DED88CA2D149552009526BC /* GetRegionsTests.swift in Sources */,
+				6DED88D42D149864009526BC /* URLSessionStub.swift in Sources */,
+				6DED88D62D149B1E009526BC /* APIGetRegionsDataSourceStub.swift in Sources */,
+				6DED88CB2D149552009526BC /* GetRegionsRepositoryStub.swift in Sources */,
+				6DED88CF2D149576009526BC /* JobsRegionsViewModelTests.swift in Sources */,
+				6DED88CC2D149552009526BC /* Equatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,9 +861,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -414,10 +870,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.job.JobInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Debug;
@@ -443,9 +900,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
@@ -453,10 +909,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.job.JobInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
 			name = Release;
@@ -469,16 +926,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 648JG79GLR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.job.JobInfoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobInfo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JobInfo";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -492,16 +950,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 648JG79GLR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.job.JobInfoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JobInfo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/JobInfo";
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -514,16 +973,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 648JG79GLR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.job.JobInfoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = JobInfo;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -536,16 +996,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 648JG79GLR;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.job.JobInfoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = JobInfo;
 				XROS_DEPLOYMENT_TARGET = 2.2;
 			};
@@ -591,6 +1052,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D983DC52D1479FD008DC00A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D983DC62D1479FD008DC00A /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D983DC52D1479FD008DC00A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D40ADD52D1476C90015F8AC /* Project object */;
 }

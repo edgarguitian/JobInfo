@@ -11,7 +11,7 @@ import SwiftUI
 struct JobInfoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentViewFactory.create()
         }
     }
 }
