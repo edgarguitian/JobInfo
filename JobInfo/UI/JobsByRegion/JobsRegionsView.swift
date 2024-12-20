@@ -15,12 +15,18 @@ struct JobsRegionsView: View {
     }
 
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             if viewModel.showLoadingSpinner {
                 LoadingSpinnerView()
             } else {
                 ForEach(viewModel.regions, id: \.self) { region in
                     Text(region.name)
+                        .padding(paddingLabelsJobs)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
+                                .stroke(lineWidth: lineWidthStroke)
+
+                        }
                     /*NavigationLink(destination:
                                     createDialplanDetail.create(jokeDialplan: dialplan)) {
                         DialplanItemView(item: dialplan,

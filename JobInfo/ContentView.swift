@@ -10,11 +10,7 @@ import SwiftUI
 struct ContentView: View {
     private let createJobsByRegionView: CreateJobsByRegionView
 
-    /// View Properties
-    private let lineWidthStroke: CGFloat = 3
-    private let cornerRadiusRoundedRectangle: CGFloat = 20
-    private let paddingLabelsJobs: CGFloat = 10
-
+    
     init(createJobsByRegionView: CreateJobsByRegionView) {
         self.createJobsByRegionView = createJobsByRegionView
     }

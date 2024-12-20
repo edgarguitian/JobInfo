@@ -7,6 +7,7 @@
 
 import Testing
 @testable import JobInfo
+
 struct GetRegionsTests {
 
     @Test func test_execute_sucesfully_returns_regions() async throws {
