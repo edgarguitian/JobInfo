@@ -65,6 +65,13 @@
 		AFB03E512D1587FB00C5632C /* GetJobsByRegionRepositoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E502D1587FB00C5632C /* GetJobsByRegionRepositoryType.swift */; };
 		AFB03E532D15885900C5632C /* GetJobsByRegionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E522D15885900C5632C /* GetJobsByRegionTests.swift */; };
 		AFB03E552D1588D500C5632C /* GetJobsByRegionRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E542D1588D500C5632C /* GetJobsByRegionRepositoryStub.swift */; };
+		AFB03E572D158AAE00C5632C /* GetJobsByRegionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E562D158AAE00C5632C /* GetJobsByRegionRepository.swift */; };
+		AFB03E592D158B8F00C5632C /* APIGetJobsByRegionDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E582D158B8F00C5632C /* APIGetJobsByRegionDataSourceType.swift */; };
+		AFB03E5B2D158BD200C5632C /* JobsByRegionResultMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E5A2D158BD200C5632C /* JobsByRegionResultMapper.swift */; };
+		AFB03E5D2D158CC100C5632C /* GetJobsByRegionRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E5C2D158CC100C5632C /* GetJobsByRegionRepositoryTests.swift */; };
+		AFB03E5F2D158D5400C5632C /* APIGetJobsByRegionDataSourceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E5E2D158D5400C5632C /* APIGetJobsByRegionDataSourceStub.swift */; };
+		AFB03E612D158EA000C5632C /* JobsByRegionResultMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E602D158EA000C5632C /* JobsByRegionResultMapperTests.swift */; };
+		AFB03E632D158EB500C5632C /* RegionsResultMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB03E622D158EB500C5632C /* RegionsResultMapperTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +153,13 @@
 		AFB03E502D1587FB00C5632C /* GetJobsByRegionRepositoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJobsByRegionRepositoryType.swift; sourceTree = "<group>"; };
 		AFB03E522D15885900C5632C /* GetJobsByRegionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJobsByRegionTests.swift; sourceTree = "<group>"; };
 		AFB03E542D1588D500C5632C /* GetJobsByRegionRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJobsByRegionRepositoryStub.swift; sourceTree = "<group>"; };
+		AFB03E562D158AAE00C5632C /* GetJobsByRegionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJobsByRegionRepository.swift; sourceTree = "<group>"; };
+		AFB03E582D158B8F00C5632C /* APIGetJobsByRegionDataSourceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetJobsByRegionDataSourceType.swift; sourceTree = "<group>"; };
+		AFB03E5A2D158BD200C5632C /* JobsByRegionResultMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsByRegionResultMapper.swift; sourceTree = "<group>"; };
+		AFB03E5C2D158CC100C5632C /* GetJobsByRegionRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetJobsByRegionRepositoryTests.swift; sourceTree = "<group>"; };
+		AFB03E5E2D158D5400C5632C /* APIGetJobsByRegionDataSourceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGetJobsByRegionDataSourceStub.swift; sourceTree = "<group>"; };
+		AFB03E602D158EA000C5632C /* JobsByRegionResultMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsByRegionResultMapperTests.swift; sourceTree = "<group>"; };
+		AFB03E622D158EB500C5632C /* RegionsResultMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionsResultMapperTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -224,8 +238,9 @@
 		6D983D9A2D14781B008DC00A /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
-				6DED887D2D147F3C009526BC /* RegionsResultMapper.swift */,
 				6DED88812D1482F4009526BC /* JobInfoDomainErrorMapper.swift */,
+				6DED887D2D147F3C009526BC /* RegionsResultMapper.swift */,
+				AFB03E5A2D158BD200C5632C /* JobsByRegionResultMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -405,6 +420,7 @@
 			children = (
 				6D983DD32D147BB0008DC00A /* APIGetRegionsDataSourceType.swift */,
 				6DED88722D147CD5009526BC /* APIGetRegionsDataSource.swift */,
+				AFB03E582D158B8F00C5632C /* APIGetJobsByRegionDataSourceType.swift */,
 			);
 			path = Regions;
 			sourceTree = "<group>";
@@ -413,6 +429,7 @@
 			isa = PBXGroup;
 			children = (
 				6DED88752D147E42009526BC /* GetRegionsRepository.swift */,
+				AFB03E562D158AAE00C5632C /* GetJobsByRegionRepository.swift */,
 			);
 			path = Regions;
 			sourceTree = "<group>";
@@ -457,6 +474,7 @@
 			isa = PBXGroup;
 			children = (
 				6DED88B82D149552009526BC /* GetRegionsRepositoryTests.swift */,
+				AFB03E5C2D158CC100C5632C /* GetJobsByRegionRepositoryTests.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -486,6 +504,7 @@
 				6DED88D52D149B1E009526BC /* APIGetRegionsDataSourceStub.swift */,
 				6DED88DB2D14A17E009526BC /* GetRegionsStub.swift */,
 				AFB03E542D1588D500C5632C /* GetJobsByRegionRepositoryStub.swift */,
+				AFB03E5E2D158D5400C5632C /* APIGetJobsByRegionDataSourceStub.swift */,
 			);
 			path = Regions;
 			sourceTree = "<group>";
@@ -526,6 +545,8 @@
 			isa = PBXGroup;
 			children = (
 				6DED88D12D14959E009526BC /* JobInfoPresentableErrorMapperTests.swift */,
+				AFB03E602D158EA000C5632C /* JobsByRegionResultMapperTests.swift */,
+				AFB03E622D158EB500C5632C /* RegionsResultMapperTests.swift */,
 			);
 			path = Mappers;
 			sourceTree = "<group>";
@@ -678,7 +699,9 @@
 				6D983DBE2D1478ED008DC00A /* SharedURLSession.swift in Sources */,
 				6D983DBC2D1478E1008DC00A /* URLSessionType.swift in Sources */,
 				6D983DCF2D147AA3008DC00A /* HTTPClient.swift in Sources */,
+				AFB03E5B2D158BD200C5632C /* JobsByRegionResultMapper.swift in Sources */,
 				6D983DC42D1479B4008DC00A /* FirebaseLogs.swift in Sources */,
+				AFB03E592D158B8F00C5632C /* APIGetJobsByRegionDataSourceType.swift in Sources */,
 				6DED88762D147E42009526BC /* GetRegionsRepository.swift in Sources */,
 				6DED88732D147CD5009526BC /* APIGetRegionsDataSource.swift in Sources */,
 				6DED88802D147FF0009526BC /* GetRegions.swift in Sources */,
@@ -687,6 +710,7 @@
 				AFB03E452D15833E00C5632C /* JobResultDTO.swift in Sources */,
 				6D983DBA2D1478C4008DC00A /* URLSessionHTTPCLient.swift in Sources */,
 				6DED88842D14835E009526BC /* GetRegionsType.swift in Sources */,
+				AFB03E572D158AAE00C5632C /* GetJobsByRegionRepository.swift in Sources */,
 				AFB03E512D1587FB00C5632C /* GetJobsByRegionRepositoryType.swift in Sources */,
 				6D983DB22D14781B008DC00A /* ContentView.swift in Sources */,
 				6D983DB62D14789F008DC00A /* URLSessionRequestMaker.swift in Sources */,
@@ -721,14 +745,18 @@
 			files = (
 				6DED88C42D149552009526BC /* SharedURLSessionTests.swift in Sources */,
 				6DED88DC2D14A17E009526BC /* GetRegionsStub.swift in Sources */,
+				AFB03E612D158EA000C5632C /* JobsByRegionResultMapperTests.swift in Sources */,
 				6DED88C52D149552009526BC /* URLSessionErrorResolverTests.swift in Sources */,
 				6DED88C62D149552009526BC /* URLSessionHTTPClientTests.swift in Sources */,
+				AFB03E632D158EB500C5632C /* RegionsResultMapperTests.swift in Sources */,
 				AFB03E552D1588D500C5632C /* GetJobsByRegionRepositoryStub.swift in Sources */,
+				AFB03E5D2D158CC100C5632C /* GetJobsByRegionRepositoryTests.swift in Sources */,
 				6DED88C72D149552009526BC /* URLSessionRequestMakerTests.swift in Sources */,
 				AFB03E532D15885900C5632C /* GetJobsByRegionTests.swift in Sources */,
 				6DED88C82D149552009526BC /* APIGetRegionsDataSourceTests.swift in Sources */,
 				6DED88D22D14959E009526BC /* JobInfoPresentableErrorMapperTests.swift in Sources */,
 				6DED88D82D149DEF009526BC /* HTTPClientStub.swift in Sources */,
+				AFB03E5F2D158D5400C5632C /* APIGetJobsByRegionDataSourceStub.swift in Sources */,
 				6DED88C92D149552009526BC /* GetRegionsRepositoryTests.swift in Sources */,
 				6DED88CA2D149552009526BC /* GetRegionsTests.swift in Sources */,
 				6DED88D42D149864009526BC /* URLSessionStub.swift in Sources */,

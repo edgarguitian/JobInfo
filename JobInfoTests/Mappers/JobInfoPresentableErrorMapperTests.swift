@@ -25,7 +25,7 @@ struct JobInfoPresentableErrorMapperTests {
         let errorMapper = JobInfoPresentableErrorMapper()
 
         // WHEN
-        let result = errorMapper.mapError(error: nil)
+        let result = errorMapper.mapError(error: JobInfoDomainError.generic)
 
         // THEN
         #expect(result == "Communication Error")
