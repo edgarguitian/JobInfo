@@ -12,7 +12,7 @@ final class GetJobsByRegionRepositoryStub: GetJobsByRegionRepositoryType {
     var isSuccess = true
     var jobs: JobResult?
 
-    func getJobsByRegion(regionId: Int, currentPage: Int) async throws(JobInfoDomainError) -> JobResult {
+    func getJobsByRegion(regionId: Int) async throws(JobInfoDomainError) -> JobResult {
         if isSuccess {
             return jobs!
         }

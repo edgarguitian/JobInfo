@@ -20,10 +20,9 @@ final class GetJobsByRegionRepository: GetJobsByRegionRepositoryType {
         self.jobsByRegionResultMapper = jobsByRegionResultMapper
     }
 
-    func getJobsByRegion(regionId: Int, currentPage: Int) async throws(JobInfoDomainError) -> JobResult {
+    func getJobsByRegion(regionId: Int) async throws(JobInfoDomainError) -> JobResult {
         do {
-            let jobsByRegionResult = try await apiDataSource.getJobsByRegion(regionId: regionId,
-                                                                             currentPage: currentPage)
+            let jobsByRegionResult = try await apiDataSource.getJobsByRegion(regionId: regionId)
             let jobsByRegionDomain = jobsByRegionResultMapper.map(jobsByRegionResult: jobsByRegionResult)
             return jobsByRegionDomain
         } catch {

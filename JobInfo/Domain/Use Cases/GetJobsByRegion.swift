@@ -14,10 +14,9 @@ final class GetJobsByRegion: GetJobsByRegionType {
         self.repository = repository
     }
 
-    func execute(regionId: Int, currentPage: Int = 1) async throws(JobInfoDomainError) -> JobResult {
+    func execute(regionId: Int) async throws(JobInfoDomainError) -> JobResult {
         do {
-            return try await repository.getJobsByRegion(regionId: regionId,
-                                                        currentPage: currentPage)
+            return try await repository.getJobsByRegion(regionId: regionId)
         } catch {
             throw error
         }

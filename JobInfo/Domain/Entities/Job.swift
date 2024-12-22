@@ -15,7 +15,7 @@ struct Job {
     let countries: [Country]
     let regions: [Region]
     let hasRemote: Bool
-    let published: Date
+    let published: String
     let description: String
     let experienceLevel: String?
     let applicationURL: String
@@ -53,25 +53,10 @@ extension Country: Hashable {
 
 // MARK: - Region
 struct Region {
-    let name: Name
+    let name: String
 }
 
 extension Region: Hashable {
-    
-}
-
-enum Name: String {
-    case africa = "Africa"
-    case contract = "Contract"
-    case europe = "Europe"
-    case fullTime = "Full Time"
-    case internship = "Internship"
-    case middleEast = "Middle East"
-    case partTime = "Part Time"
-    case temporary = "Temporary"
-}
-
-extension Name: Hashable {
     
 }
 

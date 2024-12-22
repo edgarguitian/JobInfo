@@ -11,7 +11,6 @@ final class JobsViewModel: ObservableObject, @unchecked Sendable {
     private let getJobsByRegion: GetJobsByRegionType
     private let errorMapper: JobInfoPresentableErrorMapper
     private let regionId: Int
-    private let currentPage: Int = 1
 
     @Published var jobs: [Job] = []
     @Published var showLoadingSpinner: Bool = true
@@ -27,7 +26,7 @@ final class JobsViewModel: ObservableObject, @unchecked Sendable {
     }
 
     @MainActor
-    func getJobs(currentPage: Int = 1) async throws {
+    func getJobs() async throws {
         let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandlingJobsRegions")
         if uiTestErrorHandling {
             Task { @MainActor in
@@ -36,7 +35,7 @@ final class JobsViewModel: ObservableObject, @unchecked Sendable {
             }
         } else {
             do throws(JobInfoDomainError) {
-                let result = try await self.getJobsByRegion.execute(regionId: regionId, currentPage: currentPage)
+                let result = try await self.getJobsByRegion.execute(regionId: regionId)
                 self.handleResult(result)
             } catch {
                 self.handleError(error: error)

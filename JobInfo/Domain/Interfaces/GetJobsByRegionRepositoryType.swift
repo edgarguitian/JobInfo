@@ -8,6 +8,6 @@
 import Foundation
 
 protocol GetJobsByRegionRepositoryType {
-    func getJobsByRegion(regionId: Int, currentPage: Int) async throws(JobInfoDomainError) -> JobResult
+    func getJobsByRegion(regionId: Int) async throws(JobInfoDomainError) -> JobResult
 
 }

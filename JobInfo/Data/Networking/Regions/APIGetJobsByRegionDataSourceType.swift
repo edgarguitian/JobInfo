@@ -8,5 +8,5 @@
 import Foundation
 
 protocol APIGetJobsByRegionDataSourceType {
-    func getJobsByRegion(regionId: Int, currentPage: Int) async throws(HTTPClientError) -> JobResultDTO
+    func getJobsByRegion(regionId: Int) async throws(HTTPClientError) -> JobResultDTO
 }

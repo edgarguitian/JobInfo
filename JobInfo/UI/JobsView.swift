@@ -21,9 +21,9 @@ struct JobsView: View {
             } else {
                 ForEach(viewModel.jobs, id: \.self) { job in
                     
-                    Text(job.title)
+                    JobItemView(job: job)
                 }
-                .accessibilityIdentifier("forEachRegions")
+                .accessibilityIdentifier("forEachJobs")
             }
         }
         .alert(isPresented: $viewModel.showError, content: {

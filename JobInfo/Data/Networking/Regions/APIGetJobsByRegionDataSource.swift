@@ -14,12 +14,11 @@ final class APIGetJobsByRegionDataSource: APIGetJobsByRegionDataSourceType {
         self.httpClient = httpClient
     }
 
-    func getJobsByRegion(regionId: Int, currentPage: Int) async throws(HTTPClientError) -> JobResultDTO {
+    func getJobsByRegion(regionId: Int) async throws(HTTPClientError) -> JobResultDTO {
         let body: [String: Any] = [:]
 
         let queryParameters: [String: Any] = [
             "region_id": regionId,
-            "page": currentPage
         ]
 
         let endpoint = Endpoint(path: getJobsByRegionsPath,

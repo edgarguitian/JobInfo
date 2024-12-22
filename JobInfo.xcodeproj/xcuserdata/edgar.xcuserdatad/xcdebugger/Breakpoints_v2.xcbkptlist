@@ -94,8 +94,8 @@
             filePath = "JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "APIGetJobsByRegionDataSource"
             landmarkType = "3">
          </BreakpointContent>
@@ -110,38 +110,38 @@
             filePath = "JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "APIGetJobsByRegionDataSource"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "0B7C5345-F4A6-4F18-8566-F6EFF0447F9D - ac9da9472ee5c2d2"
+                  uuid = "0B7C5345-F4A6-4F18-8566-F6EFF0447F9D - 563179576212d2f3"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
+                  symbolName = "(3) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
                   moduleName = "JobInfo.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60">
                </Location>
                <Location
-                  uuid = "0B7C5345-F4A6-4F18-8566-F6EFF0447F9D - 8b3a125f14272c55"
+                  uuid = "0B7C5345-F4A6-4F18-8566-F6EFF0447F9D - e1042cb381e6bcf0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
+                  symbolName = "(4) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
                   moduleName = "JobInfo.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61">
+                  startingLineNumber = "60"
+                  endingLineNumber = "60">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -156,38 +156,38 @@
             filePath = "JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "APIGetJobsByRegionDataSource"
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "C84D820B-919B-48BB-94DF-6559C8A0D4BE - ac9da9472ee5c290"
+                  uuid = "C84D820B-919B-48BB-94DF-6559C8A0D4BE - 563179576212d2bd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
+                  symbolName = "(3) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
                   moduleName = "JobInfo.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63">
+                  startingLineNumber = "62"
+                  endingLineNumber = "62">
                </Location>
                <Location
-                  uuid = "C84D820B-919B-48BB-94DF-6559C8A0D4BE - 8b3a125f14272c17"
+                  uuid = "C84D820B-919B-48BB-94DF-6559C8A0D4BE - e1042cb381e6bcbe"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
+                  symbolName = "(4) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
                   moduleName = "JobInfo.debug.dylib"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63">
+                  startingLineNumber = "62"
+                  endingLineNumber = "62">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -196,74 +196,16 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EB47DD8B-8F0A-4617-8769-BB8C820A1763"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "APIGetJobsByRegionDataSource"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "EB47DD8B-8F0A-4617-8769-BB8C820A1763 - 1864bf17b86005b2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31">
-               </Location>
-               <Location
-                  uuid = "EB47DD8B-8F0A-4617-8769-BB8C820A1763 - 8e195a19c931876d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31">
-               </Location>
-               <Location
-                  uuid = "EB47DD8B-8F0A-4617-8769-BB8C820A1763 - ac9da9472ee5c6b0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31">
-               </Location>
-               <Location
-                  uuid = "EB47DD8B-8F0A-4617-8769-BB8C820A1763 - 8b3a125f14272837"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for JobInfo.APIGetJobsByRegionDataSource.getJobsByRegion(regionId: Swift.Int, currentPage: Swift.Int) async throws(JobInfo.HTTPClientError) -&gt; JobInfo.JobResultDTO"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -280,36 +222,6 @@
             endingLineNumber = "56"
             landmarkName = "URLSessionHTTPCLient"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "3522C6EF-59AB-4A1B-B477-57555F3F4D1F - 6451e0b950e2535b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for JobInfo.URLSessionHTTPCLient.makeRequest(endpoint: JobInfo.Endpoint, baseUrl: Swift.String) async throws(JobInfo.HTTPClientError) -&gt; Foundation.Data"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Infraestructure/Networking/URLSessionHTTPCLient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56">
-               </Location>
-               <Location
-                  uuid = "3522C6EF-59AB-4A1B-B477-57555F3F4D1F - 355f54af1fd7b15a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for JobInfo.URLSessionHTTPCLient.makeRequest(endpoint: JobInfo.Endpoint, baseUrl: Swift.String) async throws(JobInfo.HTTPClientError) -&gt; Foundation.Data"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Infraestructure/Networking/URLSessionHTTPCLient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -326,36 +238,6 @@
             endingLineNumber = "58"
             landmarkName = "URLSessionHTTPCLient"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "130E6529-DAC7-41AC-9976-78712508BABA - 6451e0b950e25399"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for JobInfo.URLSessionHTTPCLient.makeRequest(endpoint: JobInfo.Endpoint, baseUrl: Swift.String) async throws(JobInfo.HTTPClientError) -&gt; Foundation.Data"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Infraestructure/Networking/URLSessionHTTPCLient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58">
-               </Location>
-               <Location
-                  uuid = "130E6529-DAC7-41AC-9976-78712508BABA - 355f54af1fd7b198"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for JobInfo.URLSessionHTTPCLient.makeRequest(endpoint: JobInfo.Endpoint, baseUrl: Swift.String) async throws(JobInfo.HTTPClientError) -&gt; Foundation.Data"
-                  moduleName = "JobInfo.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgar/Documents/proyectsEdgar/JobInfo/JobInfo/Infraestructure/Networking/URLSessionHTTPCLient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "58"
-                  endingLineNumber = "58">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -370,6 +252,86 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
+            landmarkName = "URLSessionHTTPCLient"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D79BC83-5BD3-4928-9652-C3FD749AC24F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JobInfo/Infraestructure/Networking/URLSessionHTTPCLient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "URLSessionHTTPCLient"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38B1154C-675F-46F1-B669-F861C1380484"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JobInfo/Infraestructure/Networking/URLSessionHTTPCLient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "URLSessionHTTPCLient"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFA132CF-0709-4F78-8643-477F5996737C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JobInfo/Data/Networking/Regions/APIGetJobsByRegionDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "APIGetJobsByRegionDataSource"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D5630C1-E806-4AA0-9401-12057C421C41"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JobInfo/Presentation/JobsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "getJobs()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11C24FE8-4385-4DBE-9104-060FF0EB9279"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "JobInfo/Infraestructure/Networking/URLSessionHTTPCLient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "URLSessionHTTPCLient"
             landmarkType = "3">
          </BreakpointContent>

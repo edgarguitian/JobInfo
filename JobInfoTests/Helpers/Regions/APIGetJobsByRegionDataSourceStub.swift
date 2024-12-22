@@ -12,7 +12,7 @@ final class APIGetJobsByRegionDataSourceStub: APIGetJobsByRegionDataSourceType {
     var isSuccess = true
     var jobs: JobResultDTO?
 
-    func getJobsByRegion(regionId: Int, currentPage: Int) async throws(HTTPClientError) -> JobResultDTO {
+    func getJobsByRegion(regionId: Int) async throws(HTTPClientError) -> JobResultDTO {
         if isSuccess {
             return jobs!
         }

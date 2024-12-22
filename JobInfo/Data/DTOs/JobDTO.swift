@@ -17,7 +17,7 @@ struct JobDTO: Codable {
     let countries: [CountryDTO]
     let regions: [RegionDTO]
     let hasRemote: Bool
-    let published: Date
+    let published: String
     let description: String
     let experienceLevel: String?
     let applicationURL: String
@@ -60,18 +60,7 @@ struct CountryDTO: Codable {
 // MARK: - Region
 struct RegionDTO: Codable {
     let id: Int
-    let name: NameDTO
-}
-
-enum NameDTO: String, Codable {
-    case africa = "Africa"
-    case contract = "Contract"
-    case europe = "Europe"
-    case fullTime = "Full Time"
-    case internship = "Internship"
-    case middleEast = "Middle East"
-    case partTime = "Part Time"
-    case temporary = "Temporary"
+    let name: String
 }
 
 // MARK: - State

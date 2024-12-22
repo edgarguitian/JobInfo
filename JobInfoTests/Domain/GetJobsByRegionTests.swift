@@ -18,7 +18,7 @@ struct GetJobsByRegionTests {
         let sut = GetJobsByRegion(repository: stub)
 
         // WHEN
-        let capturedJobResult = try await sut.execute(regionId: 1, currentPage: 1)
+        let capturedJobResult = try await sut.execute(regionId: 1)
 
         // THEN
         #expect(capturedJobResult.count == expectedJobResult.count)
@@ -36,7 +36,7 @@ struct GetJobsByRegionTests {
 
         // WHEN
         do {
-            _ = try await sut.execute(regionId: 1, currentPage: 1)
+            _ = try await sut.execute(regionId: 1)
 
             // THEN
             Issue.record("Expected failure, but the request succeeded")

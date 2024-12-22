@@ -27,7 +27,7 @@ struct APIGetJobsByRegionDataSourceTests {
         let expectedJobsResult = JobResultDTO(count: 10, next: "nextResult", previous: "previousResult", results: [])
 
         // WHEN
-        let capturedJobsByRegionResult = try await sut.getJobsByRegion(regionId: 1, currentPage: 1)
+        let capturedJobsByRegionResult = try await sut.getJobsByRegion(regionId: 1)
 
         // THEN
         #expect(capturedJobsByRegionResult.count == expectedJobsResult.count)
@@ -44,7 +44,7 @@ struct APIGetJobsByRegionDataSourceTests {
 
         // WHEN
         do {
-            _ = try await sut.getJobsByRegion(regionId: 1, currentPage: 1)
+            _ = try await sut.getJobsByRegion(regionId: 1)
 
             // THEN
             Issue.record("Expected failure, but the request succeeded")
@@ -62,7 +62,7 @@ struct APIGetJobsByRegionDataSourceTests {
 
         // WHEN
         do {
-            _ = try await sut.getJobsByRegion(regionId: 1, currentPage: 1)
+            _ = try await sut.getJobsByRegion(regionId: 1)
 
             // THEN
             Issue.record("Expected failure, but the request succeeded")

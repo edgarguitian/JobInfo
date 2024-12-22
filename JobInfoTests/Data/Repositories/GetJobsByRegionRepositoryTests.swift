@@ -20,7 +20,7 @@ struct GetJobsByRegionRepositoryTests {
                                             jobsByRegionResultMapper: JobsByRegionResultMapper())
 
         // WHEN
-        let capturedJobsResult = try await sut.getJobsByRegion(regionId: 1, currentPage: 1)
+        let capturedJobsResult = try await sut.getJobsByRegion(regionId: 1)
 
         // THEN
         #expect(capturedJobsResult.count == expectedJobsResult.count)
@@ -40,7 +40,7 @@ struct GetJobsByRegionRepositoryTests {
 
         // WHEN
         do {
-            _ = try await sut.getJobsByRegion(regionId: 1, currentPage: 1)
+            _ = try await sut.getJobsByRegion(regionId: 1)
 
             // THEN
             Issue.record("Expected failure, but the request succeeded")
