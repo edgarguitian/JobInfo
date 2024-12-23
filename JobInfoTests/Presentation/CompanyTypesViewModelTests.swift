@@ -1,5 +1,5 @@
 //
-//  JobsTypesViewModelTests.swift
+//  CompanyTypesViewModelTests.swift
 //  JobInfoTests
 //
 //  Created by Edgar Guitian Rey on 23/12/24.
@@ -10,69 +10,70 @@ import Testing
 import Combine
 import Foundation
 
-final class JobsTypesViewModelTests {
+final class CompanyTypesViewModelTests {
     var cancellables = Set<AnyCancellable>()
-
+    
     deinit {
         cancellables.removeAll()
     }
     
     @Test func test_init() async throws {
         // GIVEN
-        let getTypesStub =  GetTypesStub()
+        let getCompanyTypesStub =  GetCompanyTypesStub()
         let errorMapper = JobInfoPresentableErrorMapper()
-
+        
         // WHEN
-        let viewModel = JobsTypesViewModel(getTypes: getTypesStub,
-                                           errorMapper: errorMapper)
-
+        let viewModel = JobsByCompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
+                                                    errorMapper: errorMapper)
+        
         // THEN
         #expect(viewModel.showLoadingSpinner == true)
         #expect(viewModel.errorMessage == nil)
         #expect(viewModel.showError == false)
-        #expect(viewModel.types.count ==  0)
+        #expect(viewModel.companyTypes.count ==  0)
     }
     
     @Test func test_getInfoTypes_success() async throws {
         // GIVEN
-        let getTypesStub =  GetTypesStub()
-        let expectedTypes = [JobType(id: 1, name: "Type1"), JobType(id: 2, name: "Type2")]
-        getTypesStub.types = expectedTypes
+        let getCompanyTypesStub =  GetCompanyTypesStub()
+        let expectedCompanyTypes = [CompanyType(id: 1, name: "CompanyType1"), CompanyType(id: 2, name: "CompanyType2")]
+        getCompanyTypesStub.companyTypes = expectedCompanyTypes
         let errorMapper = JobInfoPresentableErrorMapper()
-        let viewModel = JobsTypesViewModel(getTypes: getTypesStub,
-                                           errorMapper: errorMapper)
+        let viewModel = JobsByCompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
+                                                    errorMapper: errorMapper)
         
         // WHEN
-        try await viewModel.getInfoTypes()
-
+        try await viewModel.getInfoCompanyTypes()
+        
         // THEN
         #expect(viewModel.showLoadingSpinner == false)
         #expect(viewModel.errorMessage == nil)
         #expect(viewModel.showError == false)
-        #expect(viewModel.types.count == 2)
-
+        #expect(viewModel.companyTypes.count == 2)
+        
     }
     
     @Test func test_getInfoTypes_fail() async {
         // GIVEN
-        let getTypesStub =  GetTypesStub()
-        getTypesStub.isSuccess = false
+        let getCompanyTypesStub =  GetCompanyTypesStub()
+        getCompanyTypesStub.isSuccess = false
         let errorMapper = JobInfoPresentableErrorMapper()
-        let viewModel = JobsTypesViewModel(getTypes: getTypesStub,
-                                           errorMapper: errorMapper)
-
+        let viewModel = JobsByCompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
+                                                    errorMapper: errorMapper)
+        
         // WHEN
         await #expect(
             throws: JobInfoDomainError.generic,
             "An error should be thrown when isSuccess is false",
-            performing: { try await viewModel.getInfoTypes() })
-
+            performing: { try await viewModel.getInfoCompanyTypes() })
+        
         // THEN
         #expect(viewModel.showLoadingSpinner == false)
         #expect(viewModel.errorMessage != nil)
         #expect(viewModel.showError == true)
-        #expect(viewModel.types.count == 0)
+        #expect(viewModel.companyTypes.count == 0)
     }
-
+    
 }
+
 

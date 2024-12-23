@@ -14,6 +14,7 @@ let urlBase = "https://jobdataapi.com/api/"
 let getRegionsPath = "jobregions/"
 let getJobsByRegionsPath = "jobs/"
 let getTypesPath = "jobtypes/"
+let getCompanyTypePath = "companytypes/"
 
 /// View Properties
 let lineWidthStroke: CGFloat = 3

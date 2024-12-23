@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView: View {
     private let createJobsByRegionView: CreateJobsByRegionView
     private let createJobsByTypeView: CreateJobsByTypeView
-
+    private let createJobsByCompanyTypeView : CreateCompanyTypesView
     
     init(createJobsByRegionView: CreateJobsByRegionView,
-         createJobsByTypeView: CreateJobsByTypeView) {
+         createJobsByTypeView: CreateJobsByTypeView,
+         createJobsByCompanyTypeView: CreateCompanyTypesView) {
         self.createJobsByRegionView = createJobsByRegionView
         self.createJobsByTypeView = createJobsByTypeView
+        self.createJobsByCompanyTypeView = createJobsByCompanyTypeView
     }
     
     var body: some View {
@@ -37,18 +39,6 @@ struct ContentView: View {
                 }
                 .accessibilityIdentifier("navItemRegion")
 
-                /*NavigationLink(destination:
-                                createJobsByRegionView.create()) {
-                    Text("🀍 Jobs by Language")
-                        .padding(paddingLabelsJobs)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
-                                .stroke(lineWidth: lineWidthStroke)
-
-                        }
-                }
-                .accessibilityIdentifier("navItemLanguage")*/
-
                 NavigationLink(destination:
                                 createJobsByTypeView.create()) {
                     HStack {
@@ -63,6 +53,21 @@ struct ContentView: View {
                     }
                 }
                 .accessibilityIdentifier("navItemType")
+                
+                NavigationLink(destination:
+                                createJobsByCompanyTypeView.create()) {
+                    HStack {
+                        Image(systemName: "building")
+                        Text("Jobs by Company Type")
+                    }
+                    .padding(paddingLabelsJobs)
+                    .overlay {
+                        RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
+                            .stroke(lineWidth: lineWidthStroke)
+
+                    }
+                }
+                .accessibilityIdentifier("navItemCompanyType")
             }
         }
     }
