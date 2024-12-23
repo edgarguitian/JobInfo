@@ -7,15 +7,16 @@
 
 import Testing
 @testable import JobInfo
-struct JobsByRegionResultMapperTests {
+
+struct JobsResultMapperTests {
 
     @Test func test_map() async throws {
         // GIVEN
-        let jobsByRegionResultMapper = JobsByRegionResultMapper()
+        let jobsResultMapper = JobsResultMapper()
         let jobResultDTO = JobResultDTO(count: 10, next: "nextResult", previous: "previousResult", results: [])
 
         // WHEN
-        let result = jobsByRegionResultMapper.map(jobsByRegionResult: jobResultDTO)
+        let result = jobsResultMapper.map(jobsResult: jobResultDTO)
 
         // THEN
         #expect(result.count == jobResultDTO.count)

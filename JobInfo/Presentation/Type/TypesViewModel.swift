@@ -1,5 +1,5 @@
 //
-//  JobsByCompanyTypesViewModel.swift
+//  TypesViewModel.swift
 //  JobInfo
 //
 //  Created by Edgar Guitian Rey on 23/12/24.
@@ -7,24 +7,24 @@
 
 import Foundation
 
-final class JobsByCompanyTypesViewModel: ObservableObject, @unchecked Sendable {
-    private let getCompanyTypes: GetCompanyTypesType
+final class TypesViewModel: ObservableObject, @unchecked Sendable {
+    private let getTypes: GetTypesType
     private let errorMapper: JobInfoPresentableErrorMapper
     
-    @Published var companyTypes: [CompanyType] = []
+    @Published var types: [JobType] = []
     @Published var showLoadingSpinner: Bool = true
     @Published var errorMessage: String?
     @Published var showError: Bool = false
     
-    init(getCompanyTypes: GetCompanyTypesType,
+    init(getTypes: GetTypesType,
          errorMapper: JobInfoPresentableErrorMapper) {
-        self.getCompanyTypes = getCompanyTypes
+        self.getTypes = getTypes
         self.errorMapper = errorMapper
     }
     
     @MainActor
-    func getInfoCompanyTypes() async throws {
-        let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandlingCompanyTypes")
+    func getInfoTypes() async throws {
+        let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandlingJobsTypes")
         if uiTestErrorHandling {
             Task { @MainActor in
                 errorMessage = "Error al cargar la vista en UITest"
@@ -32,7 +32,7 @@ final class JobsByCompanyTypesViewModel: ObservableObject, @unchecked Sendable {
             }
         } else {
             do throws(JobInfoDomainError) {
-                let result = try await self.getCompanyTypes.execute()
+                let result = try await self.getTypes.execute()
                 self.handleResult(result)
             } catch {
                 self.handleError(error: error)
@@ -42,10 +42,10 @@ final class JobsByCompanyTypesViewModel: ObservableObject, @unchecked Sendable {
     }
     
     @MainActor
-    private func handleResult(_ infoCompanyTypes: [CompanyType]) {
+    private func handleResult(_ infoTypes: [JobType]) {
         showLoadingSpinner = false
         showError = false
-        companyTypes = infoCompanyTypes
+        types = infoTypes
     }
     
     private func handleError(error: JobInfoDomainError) {

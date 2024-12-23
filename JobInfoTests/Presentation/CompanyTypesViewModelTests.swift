@@ -23,8 +23,8 @@ final class CompanyTypesViewModelTests {
         let errorMapper = JobInfoPresentableErrorMapper()
         
         // WHEN
-        let viewModel = JobsByCompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
-                                                    errorMapper: errorMapper)
+        let viewModel = CompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
+                                              errorMapper: errorMapper)
         
         // THEN
         #expect(viewModel.showLoadingSpinner == true)
@@ -39,8 +39,8 @@ final class CompanyTypesViewModelTests {
         let expectedCompanyTypes = [CompanyType(id: 1, name: "CompanyType1"), CompanyType(id: 2, name: "CompanyType2")]
         getCompanyTypesStub.companyTypes = expectedCompanyTypes
         let errorMapper = JobInfoPresentableErrorMapper()
-        let viewModel = JobsByCompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
-                                                    errorMapper: errorMapper)
+        let viewModel = CompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
+                                              errorMapper: errorMapper)
         
         // WHEN
         try await viewModel.getInfoCompanyTypes()
@@ -58,8 +58,8 @@ final class CompanyTypesViewModelTests {
         let getCompanyTypesStub =  GetCompanyTypesStub()
         getCompanyTypesStub.isSuccess = false
         let errorMapper = JobInfoPresentableErrorMapper()
-        let viewModel = JobsByCompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
-                                                    errorMapper: errorMapper)
+        let viewModel = CompanyTypesViewModel(getCompanyTypes: getCompanyTypesStub,
+                                              errorMapper: errorMapper)
         
         // WHEN
         await #expect(

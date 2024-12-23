@@ -1,30 +1,30 @@
 //
-//  JobsRegionsViewModel.swift
+//  CompanyTypesViewModel.swift
 //  JobInfo
 //
-//  Created by Edgar Guitian Rey on 19/12/24.
+//  Created by Edgar Guitian Rey on 23/12/24.
 //
 
 import Foundation
 
-final class JobsRegionsViewModel: ObservableObject, @unchecked Sendable {
-    private let getRegions: GetRegionsType
+final class CompanyTypesViewModel: ObservableObject, @unchecked Sendable {
+    private let getCompanyTypes: GetCompanyTypesType
     private let errorMapper: JobInfoPresentableErrorMapper
-
-    @Published var regions: [JobRegion] = []
+    
+    @Published var companyTypes: [CompanyType] = []
     @Published var showLoadingSpinner: Bool = true
     @Published var errorMessage: String?
     @Published var showError: Bool = false
     
-    init(getRegions: GetRegionsType,
+    init(getCompanyTypes: GetCompanyTypesType,
          errorMapper: JobInfoPresentableErrorMapper) {
-        self.getRegions = getRegions
+        self.getCompanyTypes = getCompanyTypes
         self.errorMapper = errorMapper
     }
-
+    
     @MainActor
-    func getInfoRegions() async throws {
-        let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandlingJobsRegions")
+    func getInfoCompanyTypes() async throws {
+        let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandlingCompanyTypes")
         if uiTestErrorHandling {
             Task { @MainActor in
                 errorMessage = "Error al cargar la vista en UITest"
@@ -32,7 +32,7 @@ final class JobsRegionsViewModel: ObservableObject, @unchecked Sendable {
             }
         } else {
             do throws(JobInfoDomainError) {
-                let result = try await self.getRegions.execute()
+                let result = try await self.getCompanyTypes.execute()
                 self.handleResult(result)
             } catch {
                 self.handleError(error: error)
@@ -40,12 +40,12 @@ final class JobsRegionsViewModel: ObservableObject, @unchecked Sendable {
             }
         }
     }
-
+    
     @MainActor
-    private func handleResult(_ infoRegions: [JobRegion]) {
+    private func handleResult(_ infoCompanyTypes: [CompanyType]) {
         showLoadingSpinner = false
         showError = false
-        regions = infoRegions
+        companyTypes = infoCompanyTypes
     }
     
     private func handleError(error: JobInfoDomainError) {
@@ -53,5 +53,4 @@ final class JobsRegionsViewModel: ObservableObject, @unchecked Sendable {
         errorMessage = errorMapper.mapError(error: error)
         showError = true
     }
-
 }

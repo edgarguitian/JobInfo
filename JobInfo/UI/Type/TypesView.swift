@@ -7,11 +7,14 @@
 
 import SwiftUI
 
-struct JobsTypesView: View {
-    @StateObject private var viewModel: JobsTypesViewModel
+struct TypesView: View {
+    @StateObject private var viewModel: TypesViewModel
+    private let createJobsView: CreateJobsView
 
-    init(viewModel: JobsTypesViewModel) {
+    init(viewModel: TypesViewModel,
+         createJobsView: CreateJobsView) {
         self._viewModel = StateObject(wrappedValue: viewModel)
+        self.createJobsView = createJobsView
     }
 
     var body: some View {
@@ -22,13 +25,17 @@ struct JobsTypesView: View {
                 } else {
                     ForEach(viewModel.types, id: \.self) { type in
                         
-                        Text(type.name)
-                            .padding(paddingLabelsJobs)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
-                                    .stroke(lineWidth: lineWidthStroke)
+                        NavigationLink(destination:
+                                        createJobsView.create(filterID: type.id, filterType: .byType)) {
+                            Text(type.name)
+                                .padding(paddingLabelsJobs)
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
+                                        .stroke(lineWidth: lineWidthStroke)
 
-                            }
+                                }
+                        }
+                        .accessibilityIdentifier("navItemType")
                     }
                     .accessibilityIdentifier("forEachTypes")
                 }
@@ -45,6 +52,7 @@ struct JobsTypesView: View {
                     try await viewModel.getInfoTypes()
                 }
             }
+            .navigationTitle("Types")
         }
     }
 }

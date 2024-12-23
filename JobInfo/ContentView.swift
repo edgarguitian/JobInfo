@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let createJobsByRegionView: CreateJobsByRegionView
-    private let createJobsByTypeView: CreateJobsByTypeView
-    private let createJobsByCompanyTypeView : CreateCompanyTypesView
+    private let createRegionsView: CreateRegionsView
+    private let createTypesView: CreateTypesView
+    private let createCompanyTypesView : CreateCompanyTypesView
     
-    init(createJobsByRegionView: CreateJobsByRegionView,
-         createJobsByTypeView: CreateJobsByTypeView,
-         createJobsByCompanyTypeView: CreateCompanyTypesView) {
-        self.createJobsByRegionView = createJobsByRegionView
-        self.createJobsByTypeView = createJobsByTypeView
-        self.createJobsByCompanyTypeView = createJobsByCompanyTypeView
+    init(createRegionsView: CreateRegionsView,
+         createTypesView: CreateTypesView,
+         createCompanyTypesView: CreateCompanyTypesView) {
+        self.createRegionsView = createRegionsView
+        self.createTypesView = createTypesView
+        self.createCompanyTypesView = createCompanyTypesView
     }
     
     var body: some View {
@@ -25,7 +25,7 @@ struct ContentView: View {
             VStack(spacing: 30) {
 
                 NavigationLink(destination:
-                                createJobsByRegionView.create()) {
+                                createRegionsView.create()) {
                     HStack {
                         Image(systemName: "network")
                         Text("Jobs by Region")
@@ -40,7 +40,7 @@ struct ContentView: View {
                 .accessibilityIdentifier("navItemRegion")
 
                 NavigationLink(destination:
-                                createJobsByTypeView.create()) {
+                                createTypesView.create()) {
                     HStack {
                         Image(systemName: "list.bullet.rectangle")
                         Text("Jobs by Type")
@@ -55,7 +55,7 @@ struct ContentView: View {
                 .accessibilityIdentifier("navItemType")
                 
                 NavigationLink(destination:
-                                createJobsByCompanyTypeView.create()) {
+                                createCompanyTypesView.create()) {
                     HStack {
                         Image(systemName: "building")
                         Text("Jobs by Company Type")

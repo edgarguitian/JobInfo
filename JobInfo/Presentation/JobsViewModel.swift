@@ -8,21 +8,24 @@
 import Foundation
 
 final class JobsViewModel: ObservableObject, @unchecked Sendable {
-    private let getJobsByRegion: GetJobsByRegionType
+    private let getJobs: GetJobsType
     private let errorMapper: JobInfoPresentableErrorMapper
-    private let regionId: Int
+    private let filterID: Int
+    private let filterType: JobFilter
 
     @Published var jobs: [Job] = []
     @Published var showLoadingSpinner: Bool = true
     @Published var errorMessage: String?
     @Published var showError: Bool = false
     
-    init(getJobsByRegion: GetJobsByRegionType,
+    init(getJobs: GetJobsType,
          errorMapper: JobInfoPresentableErrorMapper,
-         regionId: Int) {
-        self.getJobsByRegion = getJobsByRegion
+         filterID: Int,
+         filterType: JobFilter) {
+        self.getJobs = getJobs
         self.errorMapper = errorMapper
-        self.regionId = regionId
+        self.filterID = filterID
+        self.filterType = filterType
     }
 
     @MainActor
@@ -35,7 +38,7 @@ final class JobsViewModel: ObservableObject, @unchecked Sendable {
             }
         } else {
             do throws(JobInfoDomainError) {
-                let result = try await self.getJobsByRegion.execute(regionId: regionId)
+                let result = try await self.getJobs.execute(filterID: filterID, filterType: filterType)
                 self.handleResult(result)
             } catch {
                 self.handleError(error: error)

@@ -1,5 +1,5 @@
 //
-//  APIGetJobsByRegionDataSource.swift
+//  APIGetJobsDataSource.swift
 //  JobInfo
 //
 //  Created by Edgar Guitian Rey on 20/12/24.
@@ -7,21 +7,28 @@
 
 import Foundation
 
-final class APIGetJobsByRegionDataSource: APIGetJobsByRegionDataSourceType {
+final class APIGetJobsDataSource: APIGetJobsDataSourceType {
     private let httpClient: HTTPClient
 
     init(httpClient: HTTPClient) {
         self.httpClient = httpClient
     }
 
-    func getJobsByRegion(regionId: Int) async throws(HTTPClientError) -> JobResultDTO {
+    func getJobs(filterID: Int, filterType: JobFilter) async throws(HTTPClientError) -> JobResultDTO {
         let body: [String: Any] = [:]
 
-        let queryParameters: [String: Any] = [
-            "region_id": regionId,
-        ]
+        var queryParameters: [String: Any] = [:]
+        
+        switch filterType {
+        case .byRegion:
+            queryParameters[regionType] = filterID
+        case .byType:
+            queryParameters[jobType] = filterID
+        case .byCompanyType:
+            queryParameters[companyType] = filterID
+        }
 
-        let endpoint = Endpoint(path: getJobsByRegionsPath,
+        let endpoint = Endpoint(path: getJobsPath,
                                 queryParameters: queryParameters,
                                 body: body,
                                 method: .get)
@@ -33,8 +40,8 @@ final class APIGetJobsByRegionDataSource: APIGetJobsByRegionDataSourceType {
             do {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
-                let jobsByRegionResponse = try decoder.decode(JobResultDTO.self, from: result)
-                return jobsByRegionResponse
+                let jobsResponse = try decoder.decode(JobResultDTO.self, from: result)
+                return jobsResponse
             } catch let DecodingError.dataCorrupted(context) {
                 print("Data corrupted: \(context.debugDescription)")
                 print("Coding Path: \(context.codingPath)")

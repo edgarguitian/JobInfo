@@ -12,7 +12,7 @@ import Foundation
 
 final class JobsRegionsViewModelTests {
     var cancellables = Set<AnyCancellable>()
-
+    
     deinit {
         cancellables.removeAll()
     }
@@ -21,11 +21,11 @@ final class JobsRegionsViewModelTests {
         // GIVEN
         let getRegionsStub =  GetRegionsStub()
         let errorMapper = JobInfoPresentableErrorMapper()
-
+        
         // WHEN
-        let viewModel = JobsRegionsViewModel(getRegions: getRegionsStub,
-                                             errorMapper: errorMapper)
-
+        let viewModel = RegionsViewModel(getRegions: getRegionsStub,
+                                         errorMapper: errorMapper)
+        
         // THEN
         #expect(viewModel.showLoadingSpinner == true)
         #expect(viewModel.errorMessage == nil)
@@ -39,18 +39,18 @@ final class JobsRegionsViewModelTests {
         let expectedRegions = [JobRegion(id: 1, name: "Region1"), JobRegion(id: 2, name: "Region2")]
         getRegionsStub.regions = expectedRegions
         let errorMapper = JobInfoPresentableErrorMapper()
-        let viewModel = JobsRegionsViewModel(getRegions: getRegionsStub,
-                                             errorMapper: errorMapper)
+        let viewModel = RegionsViewModel(getRegions: getRegionsStub,
+                                         errorMapper: errorMapper)
         
         // WHEN
         try await viewModel.getInfoRegions()
-
+        
         // THEN
         #expect(viewModel.showLoadingSpinner == false)
         #expect(viewModel.errorMessage == nil)
         #expect(viewModel.showError == false)
         #expect(viewModel.regions.count == 2)
-
+        
     }
     
     @Test func test_getInfoRegions_fail() async {
@@ -58,20 +58,20 @@ final class JobsRegionsViewModelTests {
         let getRegionsStub =  GetRegionsStub()
         getRegionsStub.isSuccess = false
         let errorMapper = JobInfoPresentableErrorMapper()
-        let viewModel = JobsRegionsViewModel(getRegions: getRegionsStub,
-                                             errorMapper: errorMapper)
-
+        let viewModel = RegionsViewModel(getRegions: getRegionsStub,
+                                         errorMapper: errorMapper)
+        
         // WHEN
         await #expect(
             throws: JobInfoDomainError.generic,
             "An error should be thrown when isSuccess is false",
             performing: { try await viewModel.getInfoRegions() })
-
+        
         // THEN
         #expect(viewModel.showLoadingSpinner == false)
         #expect(viewModel.errorMessage != nil)
         #expect(viewModel.showError == true)
         #expect(viewModel.regions.count == 0)
     }
-
+    
 }

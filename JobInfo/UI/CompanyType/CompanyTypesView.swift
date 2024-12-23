@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct CompanyTypesView: View {
-    @StateObject private var viewModel: JobsByCompanyTypesViewModel
+    @StateObject private var viewModel: CompanyTypesViewModel
+    private let createJobsView: CreateJobsView
 
-    init(viewModel: JobsByCompanyTypesViewModel) {
+    init(viewModel: CompanyTypesViewModel,
+         createJobsView: CreateJobsView) {
         self._viewModel = StateObject(wrappedValue: viewModel)
+        self.createJobsView = createJobsView
     }
 
     var body: some View {
@@ -22,13 +25,17 @@ struct CompanyTypesView: View {
                 } else {
                     ForEach(viewModel.companyTypes, id: \.self) { companyType in
                         
-                        Text(companyType.name)
-                            .padding(paddingLabelsJobs)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
-                                    .stroke(lineWidth: lineWidthStroke)
+                        NavigationLink(destination:
+                                        createJobsView.create(filterID: companyType.id, filterType: .byCompanyType)) {
+                            Text(companyType.name)
+                                .padding(paddingLabelsJobs)
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: cornerRadiusRoundedRectangle)
+                                        .stroke(lineWidth: lineWidthStroke)
 
-                            }
+                                }
+                        }
+                        .accessibilityIdentifier("navItemCompanyType")
                     }
                     .accessibilityIdentifier("forEachTypes")
                 }
@@ -45,6 +52,7 @@ struct CompanyTypesView: View {
                     try await viewModel.getInfoCompanyTypes()
                 }
             }
+            .navigationTitle("Company Types")
         }
     }
 }

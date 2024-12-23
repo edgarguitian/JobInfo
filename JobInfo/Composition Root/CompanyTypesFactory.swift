@@ -10,13 +10,14 @@ import Foundation
 final class CompanyTypesFactory: @preconcurrency CreateCompanyTypesView  {
     // MARK: UI
     @MainActor func create() -> CompanyTypesView {
-        return CompanyTypesView(viewModel: createJobsByCompanyTypesViewModel())
+        return CompanyTypesView(viewModel: createCompanyTypesViewModel(),
+                                createJobsView: JobsFactory())
     }
     
     // MARK: View Model
-    private func createJobsByCompanyTypesViewModel() -> JobsByCompanyTypesViewModel {
-        return JobsByCompanyTypesViewModel(getCompanyTypes: createGetCompanyTypesUseCase(),
-                                           errorMapper: JobInfoPresentableErrorMapper())
+    private func createCompanyTypesViewModel() -> CompanyTypesViewModel {
+        return CompanyTypesViewModel(getCompanyTypes: createGetCompanyTypesUseCase(),
+                                     errorMapper: JobInfoPresentableErrorMapper())
     }
     
     // MARK: Use Case

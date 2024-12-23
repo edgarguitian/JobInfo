@@ -1,5 +1,5 @@
 //
-//  JobsRegionsFactory.swift
+//  RegionsFactory.swift
 //  JobInfo
 //
 //  Created by Edgar Guitian Rey on 19/12/24.
@@ -7,17 +7,17 @@
 
 import Foundation
 
-final class JobsRegionsFactory: @preconcurrency CreateJobsByRegionView {
+final class RegionsFactory: @preconcurrency CreateRegionsView {
     // MARK: UI
-    @MainActor func create() -> JobsRegionsView {
-        return JobsRegionsView(viewModel: createJobsRegionsViewModel(),
-                               createJobsView: JobsFactory())
+    @MainActor func create() -> RegionsView {
+        return RegionsView(viewModel: createRegionsViewModel(),
+                           createJobsView: JobsFactory())
     }
     
     // MARK: View Model
-    private func createJobsRegionsViewModel() -> JobsRegionsViewModel {
-        return JobsRegionsViewModel(getRegions: createGetRegionsUseCase(),
-                                    errorMapper: JobInfoPresentableErrorMapper())
+    private func createRegionsViewModel() -> RegionsViewModel {
+        return RegionsViewModel(getRegions: createGetRegionsUseCase(),
+                                errorMapper: JobInfoPresentableErrorMapper())
     }
     
     // MARK: Use Case

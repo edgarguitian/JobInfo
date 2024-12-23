@@ -8,5 +8,5 @@
 import Foundation
 
 protocol CreateJobsView {
-    func create(regionID: Int) -> JobsView
+    func create(filterID: Int, filterType: JobFilter) -> JobsView
 }

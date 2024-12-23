@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct JobsRegionsView: View {
-    @StateObject private var viewModel: JobsRegionsViewModel
+struct RegionsView: View {
+    @StateObject private var viewModel: RegionsViewModel
     private let createJobsView: CreateJobsView
 
-    init(viewModel: JobsRegionsViewModel,
+    init(viewModel: RegionsViewModel,
          createJobsView: CreateJobsView) {
         self._viewModel = StateObject(wrappedValue: viewModel)
         self.createJobsView = createJobsView
@@ -26,7 +26,7 @@ struct JobsRegionsView: View {
                     ForEach(viewModel.regions, id: \.self) { region in
                         
                         NavigationLink(destination:
-                                        createJobsView.create(regionID: region.id)) {
+                                        createJobsView.create(filterID: region.id, filterType: .byRegion)) {
                             Text(region.name)
                                 .padding(paddingLabelsJobs)
                                 .overlay {
@@ -52,6 +52,7 @@ struct JobsRegionsView: View {
                     try await viewModel.getInfoRegions()
                 }
             }
+            .navigationTitle("Regions")
         }
     }
 }

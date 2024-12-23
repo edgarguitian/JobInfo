@@ -9,32 +9,33 @@ import Foundation
 
 final class JobsFactory: @preconcurrency CreateJobsView {
     // MARK: UI
-    @MainActor func create(regionID: Int) -> JobsView {
-        return JobsView(viewModel: createJobsViewModel(regionId: regionID))
+    @MainActor func create(filterID: Int, filterType: JobFilter) -> JobsView {
+        return JobsView(viewModel: createJobsViewModel(filterID: filterID, filterType: filterType))
     }
     
     // MARK: View Model
-    private func createJobsViewModel(regionId: Int) -> JobsViewModel {
-        return JobsViewModel(getJobsByRegion: createGetJobsByRegionUseCase(),
+    private func createJobsViewModel(filterID: Int, filterType: JobFilter) -> JobsViewModel {
+        return JobsViewModel(getJobs: createGetJobsUseCase(),
                              errorMapper: JobInfoPresentableErrorMapper(),
-                             regionId: regionId)
+                             filterID: filterID,
+                             filterType: filterType)
     }
     
     // MARK: Use Case
-    private func createGetJobsByRegionUseCase() -> GetJobsByRegionType {
-        return GetJobsByRegion(repository: createGetJobsByRegionRepository())
+    private func createGetJobsUseCase() -> GetJobsType {
+        return GetJobs(repository: createGetJobsRepository())
     }
     
     // MARK: Repository
-    private func createGetJobsByRegionRepository() -> GetJobsByRegionRepositoryType {
-        return GetJobsByRegionRepository(apiDataSource: createApiGetJobsByRegionDataSource(),
+    private func createGetJobsRepository() -> GetJobsRepositoryType {
+        return GetJobsRepository(apiDataSource: createApiGetJobsDataSource(),
                                          errorMapper: JobInfoDomainErrorMapper(),
-                                         jobsByRegionResultMapper: JobsByRegionResultMapper())
+                                         jobsResultMapper: JobsResultMapper())
     }
     
     // MARK: Data Source
-    private func createApiGetJobsByRegionDataSource() -> APIGetJobsByRegionDataSourceType {
-        return APIGetJobsByRegionDataSource(httpClient: createHTTPClient())
+    private func createApiGetJobsDataSource() -> APIGetJobsDataSourceType {
+        return APIGetJobsDataSource(httpClient: createHTTPClient())
     }
     
     // MARK: HTTP Client
