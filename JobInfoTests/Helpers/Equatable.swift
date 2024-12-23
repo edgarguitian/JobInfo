@@ -21,3 +21,10 @@ extension JobRegionDTO: @retroactive Equatable {
         && lhs.name == rhs.name
     }
 }
+
+extension JobTypeDTO: @retroactive Equatable {
+    public static func == (lhs: JobTypeDTO, rhs: JobTypeDTO) -> Bool {
+        return lhs.id == rhs.id
+        && lhs.name == rhs.name
+    }
+}

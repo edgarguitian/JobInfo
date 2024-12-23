@@ -7,6 +7,7 @@
 
 import Foundation
 @testable import JobInfo
+
 final class GetRegionsStub: GetRegionsType {
     var isSuccess = true
     var regions: [JobRegion] = []
