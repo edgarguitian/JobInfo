@@ -10,6 +10,7 @@ import Foundation
 final class ContentViewFactory {
     // MARK: UI
     @MainActor static func create() -> ContentView {
-        return ContentView(createJobsByRegionView: JobsRegionsFactory())
+        return ContentView(createJobsByRegionView: JobsRegionsFactory(),
+                           createJobsByTypeView: JobsTypesFactory())
     }
 }

@@ -17,7 +17,7 @@ struct JobDTO: Codable {
     let countries: [CountryDTO]
     let regions: [RegionDTO]
     let hasRemote: Bool
-    let published: String
+    let published: Date
     let description: String
     let experienceLevel: String?
     let applicationURL: String

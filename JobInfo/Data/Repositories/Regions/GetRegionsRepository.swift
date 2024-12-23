@@ -12,7 +12,9 @@ final class GetRegionsRepository: GetRegionsRepositoryType {
     private let errorMapper: JobInfoDomainErrorMapper
     private let regionsResultMapper: RegionsResultMapper
     
-    init(apiDataSource: APIGetRegionsDataSourceType, errorMapper: JobInfoDomainErrorMapper, regionsResultMapper: RegionsResultMapper) {
+    init(apiDataSource: APIGetRegionsDataSourceType,
+         errorMapper: JobInfoDomainErrorMapper,
+         regionsResultMapper: RegionsResultMapper) {
         self.apiDataSource = apiDataSource
         self.errorMapper = errorMapper
         self.regionsResultMapper = regionsResultMapper

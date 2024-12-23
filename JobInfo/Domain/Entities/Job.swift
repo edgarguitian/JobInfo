@@ -15,7 +15,7 @@ struct Job {
     let countries: [Country]
     let regions: [Region]
     let hasRemote: Bool
-    let published: String
+    let published: Date
     let description: String
     let experienceLevel: String?
     let applicationURL: String

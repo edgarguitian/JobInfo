@@ -19,11 +19,14 @@ struct JobsView: View {
             if viewModel.showLoadingSpinner {
                 LoadingSpinnerView()
             } else {
-                ForEach(viewModel.jobs, id: \.self) { job in
+                List {
+                    ForEach(viewModel.jobs, id: \.self) { job in
+                        
+                        JobItemView(job: job)
+                    }
+                    .accessibilityIdentifier("forEachJobs")
                     
-                    JobItemView(job: job)
                 }
-                .accessibilityIdentifier("forEachJobs")
             }
         }
         .alert(isPresented: $viewModel.showError, content: {

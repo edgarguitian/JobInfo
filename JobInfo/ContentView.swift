@@ -9,10 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     private let createJobsByRegionView: CreateJobsByRegionView
+    private let createJobsByTypeView: CreateJobsByTypeView
 
     
-    init(createJobsByRegionView: CreateJobsByRegionView) {
+    init(createJobsByRegionView: CreateJobsByRegionView,
+         createJobsByTypeView: CreateJobsByTypeView) {
         self.createJobsByRegionView = createJobsByRegionView
+        self.createJobsByTypeView = createJobsByTypeView
     }
     
     var body: some View {
@@ -34,7 +37,7 @@ struct ContentView: View {
                 }
                 .accessibilityIdentifier("navItemRegion")
 
-                NavigationLink(destination:
+                /*NavigationLink(destination:
                                 createJobsByRegionView.create()) {
                     Text("🀍 Jobs by Language")
                         .padding(paddingLabelsJobs)
@@ -44,10 +47,10 @@ struct ContentView: View {
 
                         }
                 }
-                .accessibilityIdentifier("navItemLanguage")
+                .accessibilityIdentifier("navItemLanguage")*/
 
                 NavigationLink(destination:
-                                createJobsByRegionView.create()) {
+                                createJobsByTypeView.create()) {
                     HStack {
                         Image(systemName: "list.bullet.rectangle")
                         Text("Jobs by Type")
