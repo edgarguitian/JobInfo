@@ -28,9 +28,9 @@ struct JobsView: View {
                             
                             JobItemView(job: job)
                         }
-                        .accessibilityIdentifier("forEachJobs")
                         
                     }
+                    .accessibilityIdentifier("listJobs")
                 }
             }
             .alert(isPresented: $viewModel.showError, content: {

@@ -52,6 +52,7 @@
 		6D1E8FEA2D19C5220037BB27 /* GetCompanyTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E8FE92D19C5220037BB27 /* GetCompanyTypesTests.swift */; };
 		6D1E8FEE2D19F4A20037BB27 /* JobFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E8FED2D19F4A20037BB27 /* JobFilter.swift */; };
 		6D1E91422D1D63CF0037BB27 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1E91412D1D63CF0037BB27 /* FirebaseCrashlytics */; };
+		6D1E91432D1D65DD0037BB27 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D983DC12D147957008DC00A /* Constants.swift */; };
 		6D235C822D15A47C0055C8E7 /* CreateJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C812D15A47C0055C8E7 /* CreateJobsView.swift */; };
 		6D235C842D15A4950055C8E7 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C832D15A4950055C8E7 /* JobsView.swift */; };
 		6D235C862D15A5740055C8E7 /* JobsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C852D15A5740055C8E7 /* JobsFactory.swift */; };
@@ -1154,6 +1155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1E91432D1D65DD0037BB27 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

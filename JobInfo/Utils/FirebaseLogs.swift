@@ -6,6 +6,7 @@
 //
 
 import FirebaseCrashlytics
+let firebaseLogs = FirebaseLogs()
 
 class FirebaseLogs: NSObject, @unchecked Sendable {
     func sendRecord(message: String, description: String) {

@@ -7,7 +7,6 @@
 
 import Foundation
 
-let firebaseLogs = FirebaseLogs()
 
 /// URLS JOBS
 let urlBase = "https://jobdataapi.com/api/"

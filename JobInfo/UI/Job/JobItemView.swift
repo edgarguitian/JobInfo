@@ -27,6 +27,7 @@ struct JobItemView: View {
                         .frame(width: 50, height: 50)
                         .overlay(ProgressView())
                 }
+                .accessibilityIdentifier("imageJob")
                 
                 VStack(alignment: .leading, spacing: 10) {
                     // Job Info Rows
@@ -70,10 +71,13 @@ struct JobInfoRow: View {
             Text("\(label):")
                 .font(.caption)
                 .fontWeight(.bold)
+                .accessibilityIdentifier("labelJob\(label)")
             Text(value)
                 .font(.caption)
                 .lineLimit(2)
                 .truncationMode(.tail)
+                .accessibilityIdentifier("valueJob\(label)")
+
         }
     }
 }
