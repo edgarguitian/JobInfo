@@ -35,9 +35,8 @@ struct CompanyTypesView: View {
 
                                 }
                         }
-                        .accessibilityIdentifier("navItemCompanyType")
+                        .accessibilityIdentifier("navItemJobsCompanyType")
                     }
-                    .accessibilityIdentifier("forEachTypes")
                 }
             }
             .alert(isPresented: $viewModel.showError, content: {
@@ -52,7 +51,7 @@ struct CompanyTypesView: View {
                     try await viewModel.getInfoCompanyTypes()
                 }
             }
-            .navigationTitle("Company Types")
+            .navigationTitle(titleCompanyTypesView)
         }
     }
 }

@@ -35,9 +35,8 @@ struct TypesView: View {
 
                                 }
                         }
-                        .accessibilityIdentifier("navItemType")
+                        .accessibilityIdentifier("navItemJobsType")
                     }
-                    .accessibilityIdentifier("forEachTypes")
                 }
             }
             .alert(isPresented: $viewModel.showError, content: {
@@ -52,7 +51,7 @@ struct TypesView: View {
                     try await viewModel.getInfoTypes()
                 }
             }
-            .navigationTitle("Types")
+            .navigationTitle(titleTypesView)
         }
     }
 }

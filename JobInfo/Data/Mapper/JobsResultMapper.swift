@@ -19,14 +19,19 @@ final class JobsResultMapper {
                                   githubURL: jobResult.company.githubURL,
                                   isAgency: jobResult.company.isAgency)
             let jobTypes: [Region] = jobResult.types.map { Region(name: $0.name) }
-            let jobCities: [City] = jobResult.cities.map { City(name: $0.name,
-                                                                  country: Country(name: $0.country.name, region: Region(name: $0.country.region.name)),
-                                                                  state: State(name: $0.state.name,
-                                                                               country: Country(name: $0.state.country.name,
-                                                                                                region: Region(name: $0.state.country.region.name)
-                                                                                               )
-                                                                              )
-            )}
+            var jobCities: [City] = []
+            if jobResult.cities != nil {
+                
+                jobCities = jobResult.cities!.map { City(name: $0.name,
+                                                         country: Country(name: $0.country.name, region: Region(name: $0.country.region.name)),
+                                                         state: State(name: $0.state?.name,
+                                                                      country: Country(name: $0.state?.country.name ?? "",
+                                                                                       region: Region(name: $0.state?.country.region.name ?? "")
+                                                                                      )
+                                                                     )
+                )}
+            }
+            
             let jobCountries: [Country] = jobResult.countries.map { Country(name: $0.name, region: Region(name: $0.region.name)) }
             let jobRegions: [Region] = jobResult.regions.map { Region(name: $0.name) }
             let job = Job(company: company,

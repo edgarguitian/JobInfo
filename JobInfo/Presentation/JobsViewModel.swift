@@ -30,7 +30,7 @@ final class JobsViewModel: ObservableObject, @unchecked Sendable {
 
     @MainActor
     func getJobs() async throws {
-        let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandlingJobsRegions")
+        let uiTestErrorHandling = ProcessInfo.processInfo.arguments.contains("UITestErrorHandlingJobs")
         if uiTestErrorHandling {
             Task { @MainActor in
                 errorMessage = "Error al cargar la vista en UITest"

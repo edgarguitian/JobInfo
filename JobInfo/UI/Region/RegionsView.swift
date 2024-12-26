@@ -35,9 +35,8 @@ struct RegionsView: View {
 
                                 }
                         }
-                        .accessibilityIdentifier("navItemRegion")
+                        .accessibilityIdentifier("navItemJobsRegion")
                     }
-                    .accessibilityIdentifier("forEachRegions")
                 }
             }
             .alert(isPresented: $viewModel.showError, content: {
@@ -52,7 +51,7 @@ struct RegionsView: View {
                     try await viewModel.getInfoRegions()
                 }
             }
-            .navigationTitle("Regions")
+            .navigationTitle(titleRegionsView)
         }
     }
 }

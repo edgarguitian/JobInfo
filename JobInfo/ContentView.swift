@@ -69,6 +69,7 @@ struct ContentView: View {
                 }
                 .accessibilityIdentifier("navItemCompanyType")
             }
+            .navigationTitle("Jobs")
         }
     }
 }

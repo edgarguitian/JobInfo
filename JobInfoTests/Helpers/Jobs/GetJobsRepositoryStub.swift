@@ -12,7 +12,7 @@ final class GetJobsRepositoryStub: GetJobsRepositoryType {
     var isSuccess = true
     var jobs: JobResult?
 
-    func getJobs(regionId: Int) async throws(JobInfoDomainError) -> JobResult {
+    func getJobs(filterID: Int, filterType: JobFilter) async throws(JobInfoDomainError) -> JobResult {
         if isSuccess {
             return jobs!
         }

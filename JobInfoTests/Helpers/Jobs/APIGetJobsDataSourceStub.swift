@@ -12,7 +12,7 @@ final class APIGetJobsDataSourceStub: APIGetJobsDataSourceType {
     var isSuccess = true
     var jobs: JobResultDTO?
 
-    func getJobs(regionId: Int) async throws(HTTPClientError) -> JobResultDTO {
+    func getJobs(filterID: Int, filterType: JobFilter) async throws(HTTPClientError) -> JobResultDTO {
         if isSuccess {
             return jobs!
         }

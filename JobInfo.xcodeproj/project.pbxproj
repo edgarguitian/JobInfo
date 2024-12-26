@@ -51,6 +51,7 @@
 		6D1E8FE82D19C49D0037BB27 /* GetCompanyTypesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E8FE72D19C49D0037BB27 /* GetCompanyTypesRepositoryTests.swift */; };
 		6D1E8FEA2D19C5220037BB27 /* GetCompanyTypesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E8FE92D19C5220037BB27 /* GetCompanyTypesTests.swift */; };
 		6D1E8FEE2D19F4A20037BB27 /* JobFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1E8FED2D19F4A20037BB27 /* JobFilter.swift */; };
+		6D1E91422D1D63CF0037BB27 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1E91412D1D63CF0037BB27 /* FirebaseCrashlytics */; };
 		6D235C822D15A47C0055C8E7 /* CreateJobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C812D15A47C0055C8E7 /* CreateJobsView.swift */; };
 		6D235C842D15A4950055C8E7 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C832D15A4950055C8E7 /* JobsView.swift */; };
 		6D235C862D15A5740055C8E7 /* JobsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D235C852D15A5740055C8E7 /* JobsFactory.swift */; };
@@ -292,6 +293,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1E91422D1D63CF0037BB27 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,12 +485,20 @@
 			path = Jobs;
 			sourceTree = "<group>";
 		};
+		6D1E91402D1D63CF0037BB27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D40ADD42D1476C90015F8AC = {
 			isa = PBXGroup;
 			children = (
 				6D983DAF2D14781B008DC00A /* JobInfo */,
 				6DED88C32D149552009526BC /* JobInfoTests */,
 				6D40ADFB2D1476CA0015F8AC /* JobInfoUITests */,
+				6D1E91402D1D63CF0037BB27 /* Frameworks */,
 				6D40ADDE2D1476C90015F8AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -933,6 +943,7 @@
 			);
 			name = JobInfoUITests;
 			packageProductDependencies = (
+				6D1E91412D1D63CF0037BB27 /* FirebaseCrashlytics */,
 			);
 			productName = JobInfoUITests;
 			productReference = 6D40ADF82D1476CA0015F8AC /* JobInfoUITests.xctest */;
@@ -1501,6 +1512,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6D1E91412D1D63CF0037BB27 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D983DC52D1479FD008DC00A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
 		6D983DC62D1479FD008DC00A /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6D983DC52D1479FD008DC00A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

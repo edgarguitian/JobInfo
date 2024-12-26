@@ -43,12 +43,13 @@ class URLSessionHTTPCLient: HTTPClient {
                                         description: responseString)
                 throw HTTPClientError.responseError
             }
+            
+            debug(request: url, response: (resultData, response))
 
             guard response.statusCode == 200 else {
                 throw errorResolver.resolve(statusCode: response.statusCode)
             }
 
-            debug(request: url, response: (resultData, response))
 
             return resultData
 

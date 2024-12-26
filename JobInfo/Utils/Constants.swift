@@ -24,3 +24,7 @@ let companyType = "companytype_id"
 let lineWidthStroke: CGFloat = 3
 let cornerRadiusRoundedRectangle: CGFloat = 20
 let paddingLabelsJobs: CGFloat = 10
+
+let titleRegionsView: String = "Regions"
+let titleTypesView: String = "Types"
+let titleCompanyTypesView: String = "Company Types"

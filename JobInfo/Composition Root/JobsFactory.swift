@@ -10,7 +10,9 @@ import Foundation
 final class JobsFactory: @preconcurrency CreateJobsView {
     // MARK: UI
     @MainActor func create(filterID: Int, filterType: JobFilter) -> JobsView {
-        return JobsView(viewModel: createJobsViewModel(filterID: filterID, filterType: filterType))
+        return JobsView(viewModel: createJobsViewModel(filterID: filterID,
+                                                       filterType: filterType),
+                        filterType: filterType)
     }
     
     // MARK: View Model

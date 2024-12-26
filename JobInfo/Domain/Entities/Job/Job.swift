@@ -34,7 +34,7 @@ extension Job: Hashable {
 struct City {
     let name: String
     let country: Country
-    let state: State
+    let state: State?
 }
 
 extension City: Hashable {
@@ -62,8 +62,8 @@ extension Region: Hashable {
 
 // MARK: - State
 struct State {
-    let name: String
-    let country: Country
+    let name: String?
+    let country: Country?
 }
 
 extension State: Hashable {

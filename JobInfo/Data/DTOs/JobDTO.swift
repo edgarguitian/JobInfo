@@ -13,7 +13,7 @@ struct JobDTO: Codable {
     let company: CompanyDTO
     let title, location: String
     let types: [RegionDTO]
-    let cities: [CityDTO]
+    let cities: [CityDTO]?
     let countries: [CountryDTO]
     let regions: [RegionDTO]
     let hasRemote: Bool
@@ -46,7 +46,7 @@ struct CityDTO: Codable {
     let geonameid: Int
     let asciiname, name: String
     let country: CountryDTO
-    let state: StateDTO
+    let state: StateDTO?
     let timezone, latitude, longitude: String
 }
 
